@@ -4,11 +4,11 @@ body {
     font-family: Poppins;
     height: 100vh;
 }
-
 header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
 }
+
 
 img {
     width: 350px;
@@ -21,7 +21,6 @@ h1 {
     text-transform: capitalize;
     color: whitesmoke;
 }
-
 
 /* Styles for circular progress bar */
 .progress{
@@ -178,4 +177,18 @@ h1 {
 
 footer {
     background-color: rgb(83, 80, 80);
+}
+html  {
+    height: 100%;
+    background: #1a2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
