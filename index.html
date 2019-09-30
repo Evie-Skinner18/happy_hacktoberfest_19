@@ -16,7 +16,25 @@
         <h3>Open Source Contributors..</h3>	     
     </header>
     <div class="main">
-        <!-- add something funky here -->
+        <p id="countdown">
+            <script>
+                var countDownDate = new Date("Oct 30, 2019 00:00:00").getTime();
+                var update = setInterval(function() {
+                  var now = new Date().getTime();
+                  var distance = countDownDate - now;
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  document.getElementById("countdown").innerHTML = days + " days,  " + hours + " hours,  "
+                  + minutes + " minutes and " + seconds + " seconds remain for Hacktoberfest 2019!";
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "The event is now over! Thanks for participating!";
+                  }
+                }, 1000);
+                </script>
+        </p>
     </div>
         <!-- or here -->
     <footer>
