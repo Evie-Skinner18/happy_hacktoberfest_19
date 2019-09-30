@@ -4,6 +4,10 @@
     border: 5px solid blue;
     margin: auto;
 }
+body{
+	background-color: #3F3F3F;
+	color: white;
+}
 header{
     height: fit-content;
     background-color: #1188bb;
