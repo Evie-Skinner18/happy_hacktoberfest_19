@@ -4,3 +4,12 @@
     border: 5px solid purple;
     margin: auto;
 }
+
+.textAlign {
+    text-align: center
+}
+
+.header {
+    background: orange;
+    border-radius: 1em;
+}
