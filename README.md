@@ -6,7 +6,7 @@
 
 ### This is my frist Hacktoberfest, how do I get started?  :rocket:
 
-- Have a look for issues labelled as 'good first issue', 'hacktoberfest', or 'beginner'.
+- Have a look for issues labelled as 'good first issue', 'hacktoberfest', 'up-for-grabs', or 'first-timers-only'.
 - Read the instructions in contributing.md
 - Have fun creating something new!
 
