@@ -7,9 +7,11 @@
 header{
     height: fit-content;
     background-color: #1188bb;
+    text-decoration:double;
+    text-shadow:20px 5px 5px gray;
 }
-h1{
+h1 {
     text-transform: capitalize;
-
     color: whitesmoke;
+    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
 }
