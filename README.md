@@ -10,5 +10,7 @@
 - Read the instructions in contributing.md
 - Have fun creating something new!
 
+You can view the progress of the website so far here: https://evie-skinner18.github.io/happy_hacktoberfest_19/
+
 Happy coding!
 :heart_eyes:
