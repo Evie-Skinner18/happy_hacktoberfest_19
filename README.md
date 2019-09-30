@@ -1,7 +1,6 @@
 # Happy Hacktoberfest 2019!
 
-## This project is a fun little ditty to get creative with. 
-
+## Welcome hackers! This project is a beginner-friendly initiative: a fun little ditty to help you get creative with open source. 
 ## Feel free to make a new feature/page and submit a pull request.
 
 ### This is my frist Hacktoberfest, how do I get started?
