@@ -8,14 +8,21 @@ body{
     border: 5px solid blue;
     margin: auto;
 }
+
 header{
-text-align: center;
-background-color: rgb(83, 80, 80);   
-padding: 1.5em;
+    text-align: center;
+    background-color: rgb(83, 80, 80);   
+    padding: 1.5em;
+    text-decoration:double;
+    text-shadow:20px 5px 5px gray;
+}
+
 h1 {
     text-transform: capitalize;
     color: whitesmoke;
+    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
 }
+
 html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
