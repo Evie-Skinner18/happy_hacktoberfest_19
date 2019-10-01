@@ -1,3 +1,18 @@
+
+
+#rex {
+  border-radius: 5px 50px 30px 5px;
+  height: 150px;
+}
+#rexz {
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
+}
+#rexy {
+  border-radius: 15px 50px 30px;
+  height: 150px;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
