@@ -27,6 +27,8 @@ h1 {
     text-transform: capitalize;
     color: whitesmoke;
     <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
