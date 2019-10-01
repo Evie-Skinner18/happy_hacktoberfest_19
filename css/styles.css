@@ -1,49 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
 
+/* Variables */
 
-#rex {
-  border-radius: 5px 50px 30px 5px;
-  height: 150px;
+:root {
+    --main-bg-color: rgb(44, 35, 80);
+    --accent-1: #fdec04;
+    --accent-2: #ff00aa;
+    --accent-3: #44484b;
 }
-#rexz {
-    border-radius: 30px 5px 15px 50px;
-    height: 150px;
-}
-#rexy {
-  border-radius: 15px 50px 30px;
-  height: 150px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
-    font-family: Poppins;
-    height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    background: var(--main-bg-color);
 }
+
 header {
-    background-color: rgb(83, 80, 80);
-    padding: 1.5em;
-}
-.col{
-    background-color:  rgb(39, 139, 185);
-}
-img {
-    width: 350px;
-    height: 250px;
-    padding-top: 20px;
+    padding-bottom: 2em;
 }
 
-
-.main {
-    border: 5px solid blue;
-    margin: auto;
-    padding: 2em;
+.big-link, .big-link a {
+    color: var(--accent-2);
+    font-size: 1.5em;
 }
-h1 {
-    text-transform: capitalize;
-    color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+
+/* Navbar */
+.navbar-dark {
+    font-size:1.4em;
+}
+.bg-dark {
+    background:rgb(17, 13, 31) !important;
+}
+
+.navbar-nav li {
+    padding-right: 1em;
+}
+
+/* Intro */
+.intro-header {
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--accent-1);
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+}
+.intro-header::after {
+    content: '';
+    display: block;
+    height: 20px;
+    background: var(--accent-2);
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Styles for circular progress bar */
@@ -121,25 +129,25 @@ h1 {
     left: 5%;
 }
 .progress.blue .progress-bar{
-    border-color: #049dff;
+    border-color:  var(--accent-1);
 }
 .progress.blue .progress-left .progress-bar{
     animation: loading-2 1.5s linear forwards 1.8s;
 }
 .progress.yellow .progress-bar{
-    border-color: #fdba04;
+    border-color:  var(--accent-1);
 }
 .progress.yellow .progress-left .progress-bar{
     animation: loading-3 1s linear forwards 1.8s;
 }
 .progress.pink .progress-bar{
-    border-color: #ed687c;
+    border-color:  var(--accent-1);
 }
 .progress.pink .progress-left .progress-bar{
     animation: loading-4 0.4s linear forwards 1.8s;
 }
 .progress.green .progress-bar{
-    border-color: #1abc9c;
+    border-color:  var(--accent-1);
 }
 .progress.green .progress-left .progress-bar{
     animation: loading-5 1.2s linear forwards 1.8s;
@@ -200,35 +208,47 @@ h1 {
 
 
 
-footer {
-    background-color: rgb(83, 80, 80);
+
+/* Utilities */
+.text-center {
+    text-align: center !important;
 }
 
-html  {
-    height: 100%;
-    background: #1a2980; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.pt-2 {
+    padding-top: 2em;
 }
 
-.rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
+.pt-4 {
+    padding-top: 4em;
 }
 
-.textAlign {
-    text-align: center
+.pb-2 {
+    padding-bottom: 2em;
 }
 
-.header {
-    background: orange;
-    border-radius: 1em;
+.pb-4 {
+    padding-bottom: 4em;
+}
+
+.ptb-1 {
+    padding: 1em 0;
+}
+.ptb-2 {
+    padding: 2em 0;
+}
+
+.ptb-4 {
+    padding: 4em 0;
+}
+
+.ptb-6 {
+    padding: 6em 0;
+}
+
+.mrl-4 {
+    margin: auto 4em;
+}
+
+img {
+    max-width: 100%;
 }
