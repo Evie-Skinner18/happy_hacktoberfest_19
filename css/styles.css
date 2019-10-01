@@ -8,8 +8,9 @@ header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
 }
-
-
+.col{
+    background-color:  rgb(39, 139, 185);
+}
 img {
     width: 350px;
     height: 250px;
@@ -22,7 +23,6 @@ img {
     margin: auto;
     padding: 2em;
 }
-
 h1 {
     text-transform: capitalize;
     color: whitesmoke;
