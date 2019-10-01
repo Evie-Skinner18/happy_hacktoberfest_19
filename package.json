@@ -1,0 +1,25 @@
+{
+  "name": "happy_hacktoberfest_19",
+  "version": "1.0.0",
+  "description": "\u0016Welcome hackers! This project is a beginner-friendly initiative: a fun little ditty to help you get creative with open source.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evie-Skinner18/happy_hacktoberfest_19.git"
+  },
+  "keywords": [
+    "hacktoberfest2019"
+  ],
+  "author": "maniac-tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evie-Skinner18/happy_hacktoberfest_19/issues"
+  },
+  "homepage": "https://github.com/Evie-Skinner18/happy_hacktoberfest_19#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
