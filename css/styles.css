@@ -49,3 +49,15 @@ html  {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.Hacktoberfest {
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    z-index: 5;
+    margin-top: 25vh;
+}
+
+.Hacktoberfest {
+    transition: .5s;
+    font-size: 3em;
+}
