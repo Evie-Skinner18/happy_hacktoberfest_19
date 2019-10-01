@@ -14,11 +14,9 @@ img {
     width: 350px;
     height: 250px;
 }
-  
+
 
 .main {
-    height: 200px;
-    width: 800px;
     border: 5px solid blue;
     margin: auto;
     padding: 2em;
@@ -34,12 +32,13 @@ h1 {
 /* Styles for circular progress bar */
 .progress{
     width: 150px;
-    height: 150px;
+    height: 150px !important;
     line-height: 150px;
     background: none;
     margin: 0 auto;
     box-shadow: none;
     position: relative;
+    background-color:transparent !important;
 }
 .progress:after{
     content: "";
