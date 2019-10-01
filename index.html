@@ -10,6 +10,8 @@
      <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>
         <!-- Link to our CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Happy Hacktoberfest 2019!</title>
 </head>
 
@@ -20,7 +22,20 @@
         <h3>Just another heading</h3>
         <h3>Open Source Contributors..</h3>
     </header>
-    <div class="main">
+    <div class="container">
+        <div class="row justify-content-md-center" id="countdown">
+                <div class="col" id="days"></div>
+                <div class="col" id="hours"></div>
+                <div class="col" id="min"></div>
+                <div class="col" id="sec"></div>
+                <div class="w-100"></div>
+                <div class="col"><span>Days</span></div>
+                <div class="col"><span>Hours</span></div>
+                <div class="col"><span>Minutes</span></div>
+                <div class="col"><span>Seconds</span></div>
+          </div>
+      </div>
+   
         <h4 class="text-center">Things we write</h4>
         <div class="main row">
             <div class="col-md-4 ">
@@ -33,7 +48,6 @@
                 <img src="./css/3.jpeg" alt="image of code">
             </div>
         </div>
-    </div>
 
     <div class="my-5">
         <h4 class="text-center">Life of coders</h4>
@@ -77,6 +91,7 @@
         </div>
     </div>
     <!-- progress ends here -->
+  
     <hr>
     <div class="text-center">
       <h4>Hacktoberfest is presented by</h4>
@@ -90,9 +105,9 @@
        </div>
     </div>
 
-
-
     <footer class="text-center text-white">
+        <div class="Hacktoberfest">Something Funky!</div>
+
         <small>&copy Wicked Coders 2019</small>
     </footer>
     <!-- Link to our JS -->

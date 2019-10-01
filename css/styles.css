@@ -4,7 +4,6 @@ body {
     font-family: Poppins;
     height: 100vh;
 }
-
 header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
@@ -15,14 +14,22 @@ img {
     width: 350px;
     height: 250px;
 }
-.main{
+  
+
+.main {
+    height: 200px;
+    width: 800px;
+    border: 5px solid blue;
+    margin: auto;
     padding: 2em;
 }
+
+
 h1 {
     text-transform: capitalize;
     color: whitesmoke;
+    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
 }
-
 
 /* Styles for circular progress bar */
 .progress{
@@ -180,6 +187,7 @@ h1 {
 footer {
     background-color: rgb(83, 80, 80);
 }
+
 html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
@@ -194,3 +202,4 @@ html  {
         #1a2980
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
