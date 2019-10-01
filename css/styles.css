@@ -13,6 +13,7 @@ header {
 img {
     width: 350px;
     height: 250px;
+    padding-top: 20px;
 }
 
 
@@ -21,7 +22,6 @@ img {
     margin: auto;
     padding: 2em;
 }
-
 
 h1 {
     text-transform: capitalize;
