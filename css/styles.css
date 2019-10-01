@@ -208,3 +208,12 @@ html  {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
   color: transparent;
 }
+
+.textAlign {
+    text-align: center
+}
+
+.header {
+    background: orange;
+    border-radius: 1em;
+}
