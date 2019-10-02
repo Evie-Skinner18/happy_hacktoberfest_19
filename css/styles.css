@@ -39,10 +39,10 @@ header {
 }
 
 img {
-    width: 350px;
+    width: 300px;
     height: 250px;
-    padding-top: 20px;
-}
+    border-radius: 5%;
+    }
 
 
 .main {
@@ -252,6 +252,18 @@ html  {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.Hacktoberfest {
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    z-index: 5;
+    margin-top: 25vh;
+}
+
+.Hacktoberfest {
+    transition: .5s;
+    font-size: 3em;
+}
 .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
@@ -269,11 +281,12 @@ html  {
 
 ul .dropdown-content {
     /* Override default material settings causing dropdown menu item text to be cut off */
-    width: auto !important;
+    width: auto !important; 
 }
 
 nav ul a:hover {
-    /* override default material hover navlink css.*/
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0,0,0,0.1);
     color: white;
+    font-weight: 500;
+    text-decoration: none;
 }
