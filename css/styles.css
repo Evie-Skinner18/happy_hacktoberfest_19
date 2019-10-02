@@ -252,7 +252,6 @@ html  {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-<<<<<<< HEAD
 .Hacktoberfest {
     width: 50%;
     height: 50vh;
@@ -264,7 +263,7 @@ html  {
 .Hacktoberfest {
     transition: .5s;
     font-size: 3em;
-=======
+}
 .rainbow-text {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
@@ -289,5 +288,4 @@ nav ul a:hover {
     /* override default material hover navlink css.*/
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
->>>>>>> b3ee8d6491143b23f3888545265422b0893487cf
 }
