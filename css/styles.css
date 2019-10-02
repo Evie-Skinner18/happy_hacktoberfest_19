@@ -38,6 +38,10 @@ header {
     color: #04438a;
 }
 
+.row { 
+    margin-top: 40px;
+}
+
 img {
     width: 350px;
     height: 250px;
