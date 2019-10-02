@@ -65,7 +65,7 @@ img {
 h1 {
     text-transform: capitalize;
     color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
+    /* <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/> */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -244,7 +244,9 @@ html  {
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
