@@ -16,14 +16,14 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // Display info
-  document.getElementById("days").innerHTML = "<h1>"+days+"<h1>";
-  document.getElementById("hours").innerHTML = "<h1>"+hours+"<h1>";
-  document.getElementById("min").innerHTML = "<h1>"+minutes+"<h1>";
-  document.getElementById("sec").innerHTML = "<h1>"+seconds+"<h1>";
+  document.getElementById("days").innerHTML = "<h2 class='display-1 font-weight-bold'>"+days+"<h2>";
+  document.getElementById("hours").innerHTML = "<h2 class='display-1 font-weight-bold'>"+hours+"<h2>";
+  document.getElementById("min").innerHTML = "<h2 class='display-1 font-weight-bold'>"+minutes+"<h2>";
+  document.getElementById("sec").innerHTML = "<h2 class='display-1 font-weight-bold'>"+seconds+"<h2>";
 
 // If the count down is over, show the message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<h1>End Hacking 2019!</h1>";
+    document.getElementById("countdown").innerHTML = "<h2 class='display-1 font-weight-bold'>End Hacking 2019!</h2>";
   }
 }, 1000);
