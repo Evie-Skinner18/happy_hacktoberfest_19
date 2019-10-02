@@ -57,7 +57,8 @@
 </header>
 <main>
     <div class="container">
-        <h2>Happy Hacking Open Source Contrbutors Round the World!!!</h2>
+        <h1 class="h1 text-center">Contributors List </h1>
+        <div class="row justify-content-md-center"  id="contributors-list"></div>
     </div>
 </main>
 
@@ -65,12 +66,15 @@
 <!-- Link to our JS -->
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script src="./js/materialize.min.js"></script>
-<script src="./js/scripts.js"></script>
+<script src="./js/get_contributors.js"></script>
 <script>
     $(document).ready(function () {
         $('.sidenav').sidenav();
         $('.dropdown-trigger').dropdown();
     });
+    $(function () {
+        $('.container').loadContributors();
+    })
 </script>
 </body>
 </html>
