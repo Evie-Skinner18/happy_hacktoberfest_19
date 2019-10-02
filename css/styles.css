@@ -1,17 +1,3 @@
-#rex {
-    border-radius: 5px 50px 30px 5px;
-    height: 150px;
-}
-
-#rexz {
-    border-radius: 30px 5px 15px 50px;
-    height: 150px;
-}
-
-#rexy {
-    border-radius: 15px 50px 30px;
-    height: 150px;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
@@ -24,6 +10,8 @@ header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
 }
+
+.card{border-radius:7px}
 
 .col {
     background-color: rgb(39, 139, 185);
@@ -281,7 +269,7 @@ html  {
 
 ul .dropdown-content {
     /* Override default material settings causing dropdown menu item text to be cut off */
-    width: auto !important; 
+    width: auto !important;
 }
 
 nav ul a:hover {
