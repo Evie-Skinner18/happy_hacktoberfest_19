@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <!-- Link to our CSS -->
@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <div class="navbar-fixed">
+        <div class="fixed-nav-bar">
             <ul id="dropdown1" class="dropdown-content">
                 <li><a href="https://hacktoberfest.digitalocean.com" target="_blank">Hacktoberfest</a></li>
                 <li><a href="https://hacktoberfest.digitalocean.com/profile" target="_blank">start hacking</a></li>
@@ -36,12 +36,14 @@
                         </a>
                         <ul class="right hide-on-med-and-down">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#!" class="dropdown-trigger" data-target="dropdown1">Events<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a href="#!" class="dropdown-trigger" data-target="dropdown1">Events<i
+                                        class="material-icons right">arrow_drop_down</i></a></li>
                             <li><a href="#!">Blog</a></li>
                             <li><a href="#!">Open Source</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="about.html">About</a></li>
-                            <a href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19" class="btn waves-effect waves-light blue accent" target="_blank">GitHub</a>
+                            <a href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19"
+                                class="btn waves-effect waves-light blue accent" target="_blank">GitHub</a>
                         </ul>
                         <ul class="sidenav" id="mobile-menu">
                             <li><a href="#!">Home</a></li>
@@ -56,43 +58,44 @@
     </header>
     <br><br>
 
-        <div class="container">
-          <div class="row justify-content-md-center" id="countdown">
-                <div class="col-2 text-center" id="days"></div>
-                <div class="col-2 text-center" id="hours"></div>
-                <div class="col-2 text-center" id="min"></div>
-                <div class="col-2 text-center" id="sec"></div>
-                <div class="w-100"></div>
-                <div class="col-2 pb-3 text-center"><span class="h2 text-white">Days</span></div>
-                <div class="col-2 pb-3 text-center"><span class="h2 text-white">Hours</span></div>
-                <div class="col-2 pb-3 text-center"><span class="h2 text-white">Minutes</span></div>
-                <div class="col-2 pb-3 text-center"><span class="h2 text-white">Seconds</span></div>
-          </div>
+    <div class="container">
+        <div class="row justify-content-md-center" id="countdown">
+            <div class="col-2 text-center" id="days"></div>
+            <div class="col-2 text-center" id="hours"></div>
+            <div class="col-2 text-center" id="min"></div>
+            <div class="col-2 text-center" id="sec"></div>
+            <div class="w-100"></div>
+            <div class="col-2 pb-3 text-center"><span class="h2 text-white">Days</span></div>
+            <div class="col-2 pb-3 text-center"><span class="h2 text-white">Hours</span></div>
+            <div class="col-2 pb-3 text-center"><span class="h2 text-white">Minutes</span></div>
+            <div class="col-2 pb-3 text-center"><span class="h2 text-white">Seconds</span></div>
+        </div>
+    </div>
+
+    <section class="section blue-grey lighten-5" id="resource">
+        <h2 class="blue-text text-darken-3 center-align text-z-depth-1">Hacktoberfest 2019</h2>
+        <div class="container center">
+            <span class="grey-text text-darken-3 center">Happy Hacking</span>
+            <span class="trunc">Open Source Contributors Round the World!!!</span>
+        </div>
         </div>
 
-        <section class="section blue-grey lighten-5" id="resource">
-                <h2 class="blue-text text-darken-3 center-align text-z-depth-1">Hacktoberfest 2019</h2>
-                <div class="container center">
-                    <span class="grey-text text-darken-3 center">Happy Hacking</span>
-                    <span class="trunc">Open Source Contributors Round the World!!!</span>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="card z-depth-2" id="rexy">
-                    <div class="card-stacked">
+        <div class="col s12 m4">
+            <div class="card z-depth-2" id="rexy">
+                <div class="card-stacked">
                     <div class="card-content">
                         <p>I am<div class="card-image">
-                    </div> a very simple card. I am good at containing small bits of information.</p>
+                            </div> a very simple card. I am good at containing small bits of information.</p>
                     </div>
 
                     <div class="col s12 m4">
                         <div class="card z-depth-2" id="rexy">
                             <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am<div class="card-image">
-                            </div> a very simple card. I am good at containing small bits of information.</p>
-                            </div>
+                                <div class="card-content">
+                                    <p>I am<div class="card-image">
+                                        </div> a very simple card. I am good at containing small bits of information.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,9 +103,9 @@
                     <div class="col s12 m4">
                         <div class="card z-depth-2" id="rexz">
                             <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,17 +116,43 @@
             <div class="col s12 m4">
                 <div class="card z-depth-2" id="rex">
                     <div class="card-stacked">
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card z-depth-2" id="rexy">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>I am<div class="card-image">
+                                            </div> a very simple card. I am good at containing small bits of
+                                            information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="card z-depth-2" id="rexz">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>I am a very simple card. I am good at containing small bits of information.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col s12 m4">
-                        <div class="card z-depth-2" id="rexy">
-                            <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am<div class="card-image">
-                            </div> a very simple card. I am good at containing small bits of information.</p>
-                            </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="card z-depth-2" id="rex">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>I am a very simple card. I am good at containing small bits of information.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,32 +160,9 @@
                     <div class="col s12 m4">
                         <div class="card z-depth-2" id="rexz">
                             <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card z-depth-2" id="rex">
-                            <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="card z-depth-2" id="rexz">
-                            <div class="card-stacked">
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,10 +171,10 @@
             <div class="col s12 m4">
                 <div class="card z-depth-2" id="rexy">
                     <div class="card-stacked">
-                    <div class="card-content">
-                        <p>I am<div class="card-image">
-                    </div> a very simple card. I am good at containing small bits of information.</p>
-                    </div>
+                        <div class="card-content">
+                            <p>I am<div class="card-image">
+                                </div> a very simple card. I am good at containing small bits of information.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,43 +182,42 @@
             <div class="col s12 m4">
                 <div class="card z-depth-2" id="rexz">
                     <div class="card-stacked">
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-    <section class="text-center">
-        <h1 class="rainbow-text">Happy Hacktoberfest 2019!</h1>
-        <h2>WE LOVE CODING YEAH!</h2>
-        <h3>Just another heading</h3>
-        <h3>Open Source Contributors...</h3>
-        <h3>From all over the world</h3>
-        <h4><a href="bouncing-ball-effect.html" style="color: #000000">Bouncing Ball!</a></h4>
+            <section class="text-center">
+                <h1 class="rainbow-text">Happy Hacktoberfest 2019!</h1>
+                <h2>WE LOVE CODING YEAH!</h2>
+                <h3>Just another heading</h3>
+                <h3>Open Source Contributors...</h3>
+                <h3>From all over the world</h3>
+                <h4><a href="bouncing-ball-effect.html" style="color: #000000">Bouncing Ball!</a></h4>
+            </section>
+
+
+
+            <h4 class="text-center">Things we write</h4>
+            <div class="main row">
+
+                <div class="col-md-12 ">
+                    <h3 class="text-center">My First Hacktober Fest Contribution</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/1.jpg" alt="image of code">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/2.jpeg" alt="image of code">
+                </div>
+                <div class="col-md-4">
+                    <img src="./images/3.jpg" alt="image of code">
+
+                </div>
     </section>
-
-
-
-        <h4 class="text-center">Things we write</h4>
-        <div class="main row">
-
-            <div class="col-md-12 ">
-                <h3 class="text-center">My First Hacktober Fest Contribution</h3>
-            </div>
-            <div class="col-md-4">
-                <img src="./images/1.jpg" alt="image of code">
-            </div>
-            <div class="col-md-4">
-                <img src="./images/2.jpeg" alt="image of code">
-            </div>
-            <div class="col-md-4">
-                <img src="./images/3.jpg" alt="image of code">
-
-            </div>
-        </section>
-    </div>
 
     <div class="my-5">
         <h4 class="text-center">Life of Coders</h4>
@@ -295,38 +300,37 @@
                 </div>
             </div>
 
-    <header class="header">
-        <h1 class="textAlign">Happy Hacktoberfest 2019!</h1>
-        <h2 class="textAlign">WE LOVE CODING YEAH!</h2>
-    </header>
-    <div class="main">
-    <!-- progress ends here -->
+            <header class="header">
+                <h1 class="textAlign">Happy Hacktoberfest 2019!</h1>
+                <h2 class="textAlign">WE LOVE CODING YEAH!</h2>
+            </header>
+            <div class="main">
+                <!-- progress ends here -->
 
-    <hr>
-    <div class="text-center">
-      <h4>Hacktoberfest is presented by</h4>
-       <div class="row mr-0 m-4">
-        <div class="col-sm-6">
-            <a href="https://www.digitalocean.com">
-                <i title="Digital ocean" class="fab fa-digital-ocean fa-3x" style="color: #ffffff"></i>
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <a href="https://dev.to">
-                <i title="Dev.to" class="fab fa-dev fa-3x" style="color: #ffffff"></i>
-            </a>
-        </div>
-       </div>
-    </div>
-
-                <footer class="text-center text-white">
-                    <div class="Hacktoberfest">Something Funky!</div>
-
-                    <small>&copy Wicked Coders 2019</small>
-
-                </footer>
+                <hr>
+                <div class="text-center">
+                    <h4>Hacktoberfest is presented by</h4>
+                    <div class="row mr-0 m-4">
+                        <div class="col-sm-6">
+                            <a href="https://www.digitalocean.com">
+                                <i title="Digital ocean" class="fab fa-digital-ocean fa-3x" style="color: #ffffff"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://dev.to">
+                                <i title="Dev.to" class="fab fa-dev fa-3x" style="color: #ffffff"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <footer class="text-center text-white">
+        <div class="Hacktoberfest">Something Funky!</div>
+
+        <small>&copy Wicked Coders 2019</small>
+
     </footer>
 
     <!-- Link to our JS -->
@@ -334,7 +338,7 @@
     <script src="./js/materialize.min.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.sidenav').sidenav();
             $('.dropdown-trigger').dropdown();
         });
