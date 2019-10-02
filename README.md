@@ -6,11 +6,12 @@
 
 ### This is my first Hacktoberfest, how do I get started?  :rocket:
 
-- Have a look for issues labelled as 'good first issue', 'hacktoberfest', 'up-for-grabs', or 'first-timers-only'.
-- Read the instructions in contributing.md
-- Have fun creating something new!
+-:heart_eyes: Have a look for issues labelled as 'good first issue', 'hacktoberfest', 'up-for-grabs', or 'first-timers-only'.
+- :neutral_face:Read the instructions in contributing.md
+- :smiley:Have fun creating something new!
 
 You can view the progress of the website so far here: https://evie-skinner18.github.io/happy_hacktoberfest_19/
 
-Happy coding!
+Happy coding! 
+ Hurray
 :heart_eyes:
