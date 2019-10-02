@@ -56,7 +56,8 @@
 
 
 footer {
-    background-color: rgb(83, 80, 80);
+    margin-top: 5px;
+    /* background-color: rgb(83, 80, 80); */
 }
 
 html  {
@@ -360,4 +361,17 @@ nav ul a:hover {
     /* override default material hover navlink css.*/
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
+}
+
+/* override col color */
+.col {
+    background-color: transparent !important;
+}
+
+.bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+.page-footer {
+  padding-top: 2px !important;
 }
