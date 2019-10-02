@@ -39,10 +39,10 @@ header {
 }
 
 img {
-    width: 350px;
+    width: 300px;
     height: 250px;
-    padding-top: 20px;
-}
+    border-radius: 5%;
+    }
 
 
 .main {
