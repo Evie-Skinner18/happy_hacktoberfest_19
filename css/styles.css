@@ -255,9 +255,8 @@ html  {
     text-align: center
 }
 
-.header {
-    background: orange;
-    border-radius: 1em;
+.brand-logo {
+    margin-left: 10px;
 }
 
 ul .dropdown-content {
