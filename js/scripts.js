@@ -72,6 +72,6 @@ function somethingFunky() {
  */
 function randomColor() {
   const colors = ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red'];
-  let random = Math.floor((Math.random() * colors.length) + 1);
+  let random = 1 + Math.floor((Math.random() * colors.length));
   funky.style.color = colors[random];
 }
