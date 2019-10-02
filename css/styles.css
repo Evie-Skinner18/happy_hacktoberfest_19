@@ -29,6 +29,15 @@ header {
     background-color: rgb(39, 139, 185);
 }
 
+.col-2 {
+    background-color: rgba(21, 101, 192, 0.62);
+    text-transform: uppercase;
+}
+
+#sec h2 {
+    color: #04438a;
+}
+
 img {
     width: 350px;
     height: 250px;
@@ -42,11 +51,9 @@ img {
     padding: 2em;
 }
 
-h1 {
+h2 {
     text-transform: capitalize;
     color: whitesmoke;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
