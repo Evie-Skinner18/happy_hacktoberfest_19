@@ -232,3 +232,8 @@ html  {
     background: orange;
     border-radius: 1em;
 }
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important; 
+}
