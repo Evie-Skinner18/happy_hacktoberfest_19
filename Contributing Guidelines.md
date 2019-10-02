@@ -1,5 +1,22 @@
 # How to Contribute to this Project
 
+You can contribute to this project for:
+1. Resolving issues
+2. Feature suggestion
+
+Follow the guidelines mentioned in PR_Template.md file
+
+
+## Working on Issues ##
+
+- If you want to contribute by working on resolving issues, please state the same as a comment for the Issue.
+- Wait for repo maintainers to assign that issue to you.
+- Do not start working on the issue unless the issue is assigned to you.
+- PRs for the issue will only be accepted by the contributors who were assigned to it. This prevents other contributors from hijacking others' issues.
+
+<hr/>
+
+## Basics ##
 1. Create an account on GitHub
 
 2. Fork this repository to your own GitHub by clicking on the 'Fork' button (on the right)
@@ -31,18 +48,7 @@ _Remember hackers, Hacktoberfest is about quality over quantity. However, this r
 beginners to open source and to coding in general, so if this is your first ever open source contribution, don't hesitate to correct
 a spelling mistake or change something very small. Enjoy!_
 
-# List of contributors:
-
-- Evie-Skinner18
-- mssreerag
-- Ischaan
-- ferlu
-- devnoorfatima
-- askhilsinghal1234
-- ViktorKauter
-- KamleshSilag
-- MikailSeremet
-- WorkInProgress-Development
+<hr/>
 
 ## More Help
 
