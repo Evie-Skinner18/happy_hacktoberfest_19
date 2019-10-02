@@ -1,16 +1,16 @@
-
-
 #rex {
-  border-radius: 5px 50px 30px 5px;
-  height: 150px;
+    border-radius: 5px 50px 30px 5px;
+    height: 150px;
 }
+
 #rexz {
     border-radius: 30px 5px 15px 50px;
     height: 150px;
 }
+
 #rexy {
-  border-radius: 15px 50px 30px;
-  height: 150px;
+    border-radius: 15px 50px 30px;
+    height: 150px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
@@ -19,13 +19,25 @@ body {
     font-family: Poppins;
     height: 100vh;
 }
+
 header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
 }
-.col{
-    background-color:  rgb(39, 139, 185);
+
+.col {
+    background-color: rgb(39, 139, 185);
 }
+
+.col-2 {
+    background-color: rgba(21, 101, 192, 0.62);
+    text-transform: uppercase;
+}
+
+#sec h2 {
+    color: #04438a;
+}
+
 img {
     width: 350px;
     height: 250px;
@@ -38,16 +50,14 @@ img {
     margin: auto;
     padding: 2em;
 }
-h1 {
+
+h2 {
     text-transform: capitalize;
     color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
-.progress{
+.progress {
     width: 150px;
     height: 150px !important;
     line-height: 150px;
@@ -55,9 +65,10 @@ h1 {
     margin: 0 auto;
     box-shadow: none;
     position: relative;
-    background-color:transparent !important;
+    background-color: transparent !important;
 }
-.progress:after{
+
+.progress:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -67,7 +78,8 @@ h1 {
     top: 0;
     left: 0;
 }
-.progress > span{
+
+.progress > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -75,10 +87,12 @@ h1 {
     top: 0;
     z-index: 1;
 }
-.progress .progress-left{
+
+.progress .progress-left {
     left: 0;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     width: 100%;
     height: 100%;
     background: none;
@@ -87,7 +101,8 @@ h1 {
     position: absolute;
     top: 0;
 }
-.progress .progress-left .progress-bar{
+
+.progress .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -95,10 +110,12 @@ h1 {
     -webkit-transform-origin: center left;
     transform-origin: center left;
 }
-.progress .progress-right{
+
+.progress .progress-right {
     right: 0;
 }
-.progress .progress-right .progress-bar{
+
+.progress .progress-right .progress-bar {
     left: -100%;
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
@@ -107,7 +124,8 @@ h1 {
     transform-origin: center right;
     animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value{
+
+.progress .progress-value {
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -120,84 +138,99 @@ h1 {
     top: 5%;
     left: 5%;
 }
-.progress.blue .progress-bar{
+
+.progress.blue .progress-bar {
     border-color: #049dff;
 }
-.progress.blue .progress-left .progress-bar{
+
+.progress.blue .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
+
+.progress.yellow .progress-bar {
     border-color: #fdba04;
 }
-.progress.yellow .progress-left .progress-bar{
+
+.progress.yellow .progress-left .progress-bar {
     animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.pink .progress-bar{
+
+.progress.pink .progress-bar {
     border-color: #ed687c;
 }
-.progress.pink .progress-left .progress-bar{
+
+.progress.pink .progress-left .progress-bar {
     animation: loading-4 0.4s linear forwards 1.8s;
 }
-.progress.green .progress-bar{
+
+.progress.green .progress-bar {
     border-color: #1abc9c;
 }
-.progress.green .progress-left .progress-bar{
+
+.progress.green .progress-left .progress-bar {
     animation: loading-5 1.2s linear forwards 1.8s;
 }
-@keyframes loading-1{
-    0%{
+
+@keyframes loading-1 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 }
-@keyframes loading-2{
-    0%{
+
+@keyframes loading-2 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(144deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-3{
-    0%{
+
+@keyframes loading-3 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
 }
-@keyframes loading-4{
-    0%{
+
+@keyframes loading-4 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(144deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-5{
-    0%{
+
+@keyframes loading-5 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(180deg);
     }
 }
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
-}
 
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
+}
 
 
 footer {
@@ -208,20 +241,21 @@ html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
     background: -webkit-linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
+            to bottom,
+            #26d0ce,
+            #1a2980
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
+            to bottom,
+            #26d0ce,
+            #1a2980
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .textAlign {
@@ -231,4 +265,15 @@ html  {
 .header {
     background: orange;
     border-radius: 1em;
+}
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
+}
+
+nav ul a:hover {
+    /* override default material hover navlink css.*/
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
 }
