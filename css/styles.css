@@ -237,3 +237,7 @@ ul .dropdown-content {
     /* Override default material settings causing dropdown menu item text to be cut off */
     width: auto !important; 
 }
+nav ul a:hover {
+    /* Override link hover color default */
+    color: #fff !important;
+}
