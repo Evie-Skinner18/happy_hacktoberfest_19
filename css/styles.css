@@ -277,3 +277,18 @@ nav ul a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
 }
+
+body .container {
+    margin: auto;
+}
+
+.details,
+.container.details {
+    margin-bottom: 60px;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+}
