@@ -27,6 +27,11 @@ header {
 }
 
 /* Countdown Bar*/
+.container .col {
+	display: flex;
+	justify-content: center;
+	align-self: center; 
+}
 
 /* Card */
 
@@ -58,7 +63,7 @@ footer {
 h1 {
 	text-transform: capitalize;
 	color: whitesmoke;
-	<imgsrc="https://images.app.goo.gl/ka8gmfxe6bp8uefva"/>-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
 }
 
@@ -73,7 +78,7 @@ h1 {
 		orange,
 		red
 	);
-	-webkit-background-clip: text;
+	background-clip: text;
 	color: transparent;
 }
 
