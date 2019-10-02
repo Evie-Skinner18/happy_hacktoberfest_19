@@ -1,0 +1,35 @@
+.animate-ball-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.animate-ball-container ul {
+    display: flex;
+    border-bottom: 10px solid black
+}
+
+.animate-ball-container ul li {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    list-style: none;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: bouncy 3s linear infinite;
+}
+
+@keyframes bouncy {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
