@@ -11,3 +11,4 @@
 - MikailSeremet
 - WorkInProgress-Development
 - NitinNair89
+- maniac-tech
