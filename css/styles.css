@@ -1,35 +1,130 @@
-
-
-#rex {
-  border-radius: 5px 50px 30px 5px;
-  height: 150px;
-}
-#rexz {
-    border-radius: 30px 5px 15px 50px;
-    height: 150px;
-}
-#rexy {
-  border-radius: 15px 50px 30px;
-  height: 150px;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(180deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+
+footer {
+    background-color: rgb(83, 80, 80);
+}
+
+html  {
+    height: 100%;
+    background: #1a2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 body {
     font-family: Poppins;
     height: 100vh;
 }
+
 header {
     background-color: rgb(83, 80, 80);
     padding: 1.5em;
 }
-.col{
-    background-color:  rgb(39, 139, 185);
-}
+
 img {
     width: 350px;
     height: 250px;
     padding-top: 20px;
+}
+
+ul > li > a:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: whitesmoke;
+    background-image: url("https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA");
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
+}
+
+#rex {
+  border-radius: 5px 50px 30px 5px;
+  height: 150px;
+}
+
+#rexz {
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
+}
+
+#rexy {
+  border-radius: 15px 50px 30px;
+  height: 150px;
+}
+
+.col{
+    background-color:  rgb(39, 139, 185);
 }
 
 
@@ -37,13 +132,6 @@ img {
     border: 5px solid blue;
     margin: auto;
     padding: 2em;
-}
-h1 {
-    text-transform: capitalize;
-    color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
@@ -144,83 +232,10 @@ h1 {
 .progress.green .progress-left .progress-bar{
     animation: loading-5 1.2s linear forwards 1.8s;
 }
-@keyframes loading-1{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-}
-@keyframes loading-2{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(144deg);
-        transform: rotate(144deg);
-    }
-}
-@keyframes loading-3{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-}
-@keyframes loading-4{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(144deg);
-        transform: rotate(144deg);
-    }
-}
-@keyframes loading-5{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-        transform: rotate(180deg);
-    }
-}
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
-}
-
-
-
-footer {
-    background-color: rgb(83, 80, 80);
-}
-
-html  {
-    height: 100%;
-    background: #1a2980; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to bottom,
-        #26d0ce,
-        #1a2980
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 .rainbow-text {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -231,9 +246,4 @@ html  {
 .header {
     background: orange;
     border-radius: 1em;
-}
-
-ul .dropdown-content {
-    /* Override default material settings causing dropdown menu item text to be cut off */
-    width: auto !important; 
 }
