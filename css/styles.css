@@ -1,341 +1,341 @@
 #rex {
-	border-radius: 5px 50px 30px 5px;
-	height: 150px;
+    border-radius: 5px 50px 30px 5px;
+    height: 150px;
 }
 
 #rexz {
-	border-radius: 30px 5px 15px 50px;
-	height: 150px;
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
 }
 
 #rexy {
-	border-radius: 15px 50px 30px;
-	height: 150px;
+    border-radius: 15px 50px 30px;
+    height: 150px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
-	font-family: Poppins;
-	height: 100vh;
+    font-family: Poppins;
+    height: 100vh;
 }
 
 header {
-	background-color: rgb(83, 80, 80);
+    background-color: rgb(83, 80, 80);
 }
 
 /* Countdown Bar*/
 .container .col {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	color: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
 }
 
 /* end Countdown Bar*/
 .col {
-	background-color: rgb(39, 139, 185);
+    background-color: rgb(39, 139, 185);
 }
 
 .col-2 {
-	background-color: rgba(21, 101, 192, 0.62);
-	text-transform: uppercase;
+    background-color: rgba(21, 101, 192, 0.62);
+    text-transform: uppercase;
 }
 
 #sec h2 {
-	color: #04438a;
+    color: #04438a;
 }
 
 img {
-	width: 300px;
-	height: 250px;
-	border-radius: 5%;
+    width: 300px;
+    height: 250px;
+    border-radius: 5%;
 }
 
 .main {
-	border: 5px solid blue;
-	margin: auto;
-	padding: 2em;
+    border: 5px solid blue;
+    margin: auto;
+    padding: 2em;
 }
 
 h2 {
-	text-transform: capitalize;
-	color: whitesmoke;
+    text-transform: capitalize;
+    color: whitesmoke;
 }
 
 /* Styles for circular progress bar */
 .progress {
-	width: 150px;
-	height: 150px !important;
-	line-height: 150px;
-	background: none;
-	margin: 0 auto;
-	box-shadow: none;
-	position: relative;
-	background-color: transparent !important;
+    width: 150px;
+    height: 150px !important;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    background-color: transparent !important;
 }
 
 .progress:after {
-	content: "";
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	border: 12px solid #fff;
-	position: absolute;
-	top: 0;
-	left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .progress > span {
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .progress .progress-left {
-	left: 0;
+    left: 0;
 }
 
 .progress .progress-bar {
-	width: 100%;
-	height: 100%;
-	background: none;
-	border-width: 12px;
-	border-style: solid;
-	position: absolute;
-	top: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
 }
 
 .progress .progress-left .progress-bar {
-	left: 100%;
-	border-top-right-radius: 80px;
-	border-bottom-right-radius: 80px;
-	border-left: 0;
-	-webkit-transform-origin: center left;
-	transform-origin: center left;
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
 }
 
 .progress .progress-right {
-	right: 0;
+    right: 0;
 }
 
 .progress .progress-right .progress-bar {
-	left: -100%;
-	border-top-left-radius: 80px;
-	border-bottom-left-radius: 80px;
-	border-right: 0;
-	-webkit-transform-origin: center right;
-	transform-origin: center right;
-	animation: loading-1 1.8s linear forwards;
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
 }
 
 .progress .progress-value {
-	width: 90%;
-	height: 90%;
-	border-radius: 50%;
-	background: #44484b;
-	font-size: 24px;
-	color: #fff;
-	line-height: 135px;
-	text-align: center;
-	position: absolute;
-	top: 5%;
-	left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 .progress.blue .progress-bar {
-	border-color: #049dff;
+    border-color: #049dff;
 }
 
 .progress.blue .progress-left .progress-bar {
-	animation: loading-2 1.5s linear forwards 1.8s;
+    animation: loading-2 1.5s linear forwards 1.8s;
 }
 
 .progress.yellow .progress-bar {
-	border-color: #fdba04;
+    border-color: #fdba04;
 }
 
 .progress.yellow .progress-left .progress-bar {
-	animation: loading-3 1s linear forwards 1.8s;
+    animation: loading-3 1s linear forwards 1.8s;
 }
 
 .progress.pink .progress-bar {
-	border-color: #ed687c;
+    border-color: #ed687c;
 }
 
 .progress.pink .progress-left .progress-bar {
-	animation: loading-4 0.4s linear forwards 1.8s;
+    animation: loading-4 0.4s linear forwards 1.8s;
 }
 
 .progress.green .progress-bar {
-	border-color: #1abc9c;
+    border-color: #1abc9c;
 }
 
 .progress.green .progress-left .progress-bar {
-	animation: loading-5 1.2s linear forwards 1.8s;
+    animation: loading-5 1.2s linear forwards 1.8s;
 }
 
 @keyframes loading-1 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(180deg);
-		transform: rotate(180deg);
-	}
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
 
 @keyframes loading-2 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(144deg);
-		transform: rotate(144deg);
-	}
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
 }
 
 @keyframes loading-3 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(90deg);
-		transform: rotate(90deg);
-	}
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
 }
 
 @keyframes loading-4 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(144deg);
-		transform: rotate(144deg);
-	}
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
 }
 
 @keyframes loading-5 {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(180deg);
-	}
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(180deg);
+    }
 }
 
 @media only screen and (max-width: 990px) {
-	.progress {
-		margin-bottom: 20px;
-	}
+    .progress {
+        margin-bottom: 20px;
+    }
 }
 
 html  {
-	height: 100%;
-	background: #1a2980; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to bottom,
-		#26d0ce,
-		#1a2980
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to bottom,
-		#26d0ce,
-		#1a2980
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    background: #1a2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #26d0ce,
+        #1a2980
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 footer {
-	background-color: #191919;
-	color: #fff;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
 
 .Hacktoberfest {
-	width: 50%;
-	height: 80px;
-	margin: auto;
-	z-index: 5;
-	transition: 0.5s;
-	font-size: 3em;
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    z-index: 5;
+    transition: 0.5s;
+    font-size: 3em;
 }
 
 .rainbow-text {
-	background-image: linear-gradient(
-		to left,
-		violet,
-		indigo,
-		blue,
-		green,
-		yellow,
-		orange,
-		red
-	);
-	-webkit-background-clip: text;
-	color: transparent;
+    background-image: linear-gradient(
+        to left,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+    );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .textAlign {
-	text-align: center;
+    text-align: center;
 }
 
 .header {
-	background: #1565c0;
-	border-top: 10px solid black;
-	/* border-radius: 1em; */
-	text-align: center;
+    background: #1565c0;
+    border-top: 10px solid black;
+    /* border-radius: 1em; */
+    text-align: center;
 }
 
 .header h2,
 .header h1 {
-	margin: 0;
-	padding-bottom: 10px;
-	padding-top: 10px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 ul .dropdown-content {
-	/* Override default material settings causing dropdown menu item text to be cut off */
-	width: auto !important;
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
 }
 
 nav ul a:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-	color: white;
-	font-weight: 500;
-	text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* Foooter styling Improved */
 .footer-style {
-	background-color: black;
-	border-bottom: 10px solid #1565c0;
-	/* border-top: none; */
+    background-color: black;
+    border-bottom: 10px solid #1565c0;
+    /* border-top: none; */
 }
 
 .footer-text {
-	color: #fff;
+    color: #fff;
 }
 
 .footer-flex {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .my-4 {
-	text-align: center;
+    text-align: center;
 }
 
 h2 {
-	color: #1565c0;
+    color: #1565c0;
 }
