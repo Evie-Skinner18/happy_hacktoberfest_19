@@ -41,6 +41,7 @@ a spelling mistake or change something very small. Enjoy!_
 - askhilsinghal1234
 - ViktorKauter
 - KamleshSilag
+- Aryaman Puri
 - MikailSeremet
 - WorkInProgress-Development
 
