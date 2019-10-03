@@ -22,7 +22,6 @@ body {
 
 header {
     background-color: rgb(83, 80, 80);
-    padding: 1.5em;
 }
 
 .col {
@@ -39,10 +38,10 @@ header {
 }
 
 img {
-    width: 350px;
+    width: 300px;
     height: 250px;
-    padding-top: 20px;
-}
+    border-radius: 5%;
+    }
 
 
 .main {
@@ -232,11 +231,6 @@ h2 {
     }
 }
 
-
-footer {
-    background-color: rgb(83, 80, 80);
-}
-
 html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
@@ -250,6 +244,25 @@ html  {
             #26d0ce,
             #1a2980
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer {
+    background-color: #191919;
+    border-bottom: 5px solid #fe8000;
+    color: #fff;
+    text-align: center;    
+    bottom: 0;
+    width: 100%;
+}
+
+.Hacktoberfest {
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    z-index: 5;
+    margin-top: 25vh;
+    transition: .5s;
+    font-size: 3em;
 }
 
 .rainbow-text {
@@ -269,11 +282,12 @@ html  {
 
 ul .dropdown-content {
     /* Override default material settings causing dropdown menu item text to be cut off */
-    width: auto !important;
+    width: auto !important; 
 }
 
 nav ul a:hover {
-    /* override default material hover navlink css.*/
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0,0,0,0.1);
     color: white;
+    font-weight: 500;
+    text-decoration: none;
 }
