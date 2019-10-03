@@ -24,6 +24,16 @@ header {
     background-color: rgb(83, 80, 80);
 }
 
+
+/* Countdown Bar*/
+.container .col {
+	display: flex;
+	justify-content: center;
+    align-self: center; 
+    color: white;
+}
+
+/* end Countdown Bar*/
 .col {
     background-color: rgb(39, 139, 185);
 }
