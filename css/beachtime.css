@@ -1,0 +1,514 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #bf3944;
+  }
+  
+  .sky {
+    height: 500px;
+    width: 100%;
+  }
+  .sky .sun {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .sky .sun-1, .sky .sun-2, .sky .sun-3, .sky .sun-4, .sky .sun-2-pulse, .sky .sun-3-pulse, .sky .sun-4-pulse {
+    position: absolute;
+    border-radius: 100%;
+    left: 50%;
+  }
+  .sky .sun-1 {
+    width: 800px;
+    height: 800px;
+    background: #c74a48;
+    margin-left: -400px;
+    top: 100px;
+    z-index: 1;
+  }
+  .sky .sun-2, .sky .sun-2-pulse {
+    width: 700px;
+    height: 700px;
+    background: #d35b4d;
+    margin-left: -350px;
+    top: 150px;
+    z-index: 2;
+  }
+  .sky .sun-3, .sky .sun-3-pulse {
+    width: 600px;
+    height: 600px;
+    background: #df7452;
+    margin-left: -300px;
+    top: 200px;
+    z-index: 3;
+  }
+  .sky .sun-4, .sky .sun-4-pulse {
+    width: 500px;
+    height: 500px;
+    background: #ffd461;
+    margin-left: -250px;
+    top: 250px;
+    z-index: 4;
+  }
+  .sky .sun-4 .face, .sky .sun-4-pulse .face {
+    z-index: 8;
+  }
+  .sky .sun-4 .face .left-eye, .sky .sun-4-pulse .face .left-eye {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    position: absolute;
+    border-radius: 100%;
+    top: 160px;
+    right: 95px;
+  }
+  .sky .sun-4 .face .right-eye, .sky .sun-4-pulse .face .right-eye {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    position: absolute;
+    border-radius: 100%;
+    top: 160px;
+    right: 150px;
+  }
+  .sky .sun-4 .face .left-eye-hidden, .sky .sun-4-pulse .face .left-eye-hidden {
+    width: 20px;
+    height: 20px;
+    background: #ffd461;
+    position: absolute;
+    border-radius: 100%;
+    top: 190px;
+    right: 95px;
+  }
+  .sky .sun-4 .face .right-eye-hidden, .sky .sun-4-pulse .face .right-eye-hidden {
+    width: 20px;
+    height: 20px;
+    background: #ffd461;
+    position: absolute;
+    border-radius: 100%;
+    top: 190px;
+    right: 150px;
+  }
+  .sky .sun-4 .face .smile, .sky .sun-4-pulse .face .smile {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    border-bottom: 8px solid #000000;
+    border-radius: 100%;
+    top: 160px;
+    right: 119px;
+  }
+  .sky .sun-4:hover .left-eye-hidden, .sky .sun-4-pulse:hover .left-eye-hidden {
+    top: 170px;
+  }
+  .sky .sun-4:hover .right-eye-hidden, .sky .sun-4-pulse:hover .right-eye-hidden {
+    top: 170px;
+  }
+  .sky .sun-4 {
+    z-index: 8;
+  }
+  .sky .sun-2-pulse, .sky .sun-3-pulse, .sky .sun-4-pulse {
+    -webkit-animation: pulse 3s linear;
+    -moz-animation: pulse 3s linear;
+    animation: pulse 3s linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .sea {
+    background: #a6425c;
+    background: -moz-linear-gradient(top, #a6425c 0%, #41a8f3 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #a6425c), color-stop(100%, #41a8f3));
+    background: -webkit-linear-gradient(top, #a6425c 0%, #41a8f3 100%);
+    background: -o-linear-gradient(top, #a6425c 0%, #41a8f3 100%);
+    background: -ms-linear-gradient(top, #a6425c 0%, #41a8f3 100%);
+    background: linear-gradient(to bottom, #a6425c 0%, #41a8f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6425c', endColorstr='#41a8f3', GradientType=0 );
+    width: 100%;
+    height: 200px;
+  }
+  .sea .sun-reflec {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .sea .sun-reflec-overlay {
+    z-index: 8;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: rgba(166, 66, 92, 0);
+    background: -moz-linear-gradient(top, rgba(166, 66, 92, 0) 0%, rgba(166, 66, 92, 0.15) 0%, rgba(136, 97, 137, 0.69) 30%, rgba(118, 115, 164, 0.93) 48%, #5a8fcd 75%, #41a8f3 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(166, 66, 92, 0)), color-stop(0%, rgba(166, 66, 92, 0.15)), color-stop(30%, rgba(136, 97, 137, 0.69)), color-stop(48%, rgba(118, 115, 164, 0.93)), color-stop(75%, #5a8fcd), color-stop(100%, #41a8f3));
+    background: -webkit-linear-gradient(top, rgba(166, 66, 92, 0) 0%, rgba(166, 66, 92, 0.15) 0%, rgba(136, 97, 137, 0.69) 30%, rgba(118, 115, 164, 0.93) 48%, #5a8fcd 75%, #41a8f3 100%);
+    background: -o-linear-gradient(top, rgba(166, 66, 92, 0) 0%, rgba(166, 66, 92, 0.15) 0%, rgba(136, 97, 137, 0.69) 30%, rgba(118, 115, 164, 0.93) 48%, #5a8fcd 75%, #41a8f3 100%);
+    background: -ms-linear-gradient(top, rgba(166, 66, 92, 0) 0%, rgba(166, 66, 92, 0.15) 0%, rgba(136, 97, 137, 0.69) 30%, rgba(118, 115, 164, 0.93) 48%, #5a8fcd 75%, #41a8f3 100%);
+    background: linear-gradient(to bottom, rgba(166, 66, 92, 0) 0%, rgba(166, 66, 92, 0.15) 0%, rgba(136, 97, 137, 0.69) 30%, rgba(118, 115, 164, 0.93) 48%, #5a8fcd 75%, #41a8f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6425c', endColorstr='#41a8f3', GradientType=0 );
+  }
+  .sea .sun-reflec-1, .sea .sun-reflec-2, .sea .sun-reflec-3, .sea .sun-reflec-4, .sea .sun-reflec-2-pulse, .sea .sun-reflec-3-pulse, .sea .sun-reflec-4-pulse {
+    position: absolute;
+    border-radius: 100%;
+    left: 50%;
+    margin-top: -500px;
+  }
+  .sea .sun-reflec-1 {
+    width: 800px;
+    height: 800px;
+    background: #c74a48;
+    margin-left: -400px;
+    top: 100px;
+    z-index: 1;
+  }
+  .sea .sun-reflec-2, .sea .sun-reflec-2-pulse {
+    width: 700px;
+    height: 700px;
+    background: #d35b4d;
+    margin-left: -350px;
+    top: 150px;
+    z-index: 2;
+  }
+  .sea .sun-reflec-3, .sea .sun-reflec-3-pulse {
+    width: 600px;
+    height: 600px;
+    background: #df7452;
+    margin-left: -300px;
+    top: 200px;
+    z-index: 3;
+  }
+  .sea .sun-reflec-4, .sea .sun-reflec-4-pulse {
+    width: 500px;
+    height: 500px;
+    background: #ffd461;
+    margin-left: -250px;
+    top: 250px;
+    z-index: 4;
+  }
+  .sea .sun-reflec-2-pulse, .sea .sun-reflec-3-pulse, .sea .sun-reflec-4-pulse {
+    -webkit-animation: pulse 3s linear;
+    -moz-animation: pulse 3s linear;
+    animation: pulse 3s linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .beach {
+    background: #ffd461;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .beach .man {
+    width: 800px;
+    height: 87px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .beach .man .step {
+    background: #e5b644;
+    width: 5px;
+    height: 3px;
+    border-radius: 4px;
+    position: absolute;
+  }
+  .beach .man .step-1 {
+    top: 85px;
+    right: 165px;
+  }
+  .beach .man .step-2 {
+    top: 80px;
+    right: 160px;
+  }
+  .beach .man .step-3 {
+    top: 85px;
+    right: 155px;
+    opacity: 0.7;
+  }
+  .beach .man .step-4 {
+    top: 80px;
+    right: 150px;
+    opacity: 0.7;
+  }
+  .beach .man .step-5 {
+    top: 85px;
+    right: 145px;
+    opacity: 0.6;
+  }
+  .beach .man .step-6 {
+    top: 80px;
+    right: 140px;
+    opacity: 0.6;
+  }
+  .beach .man .step-7 {
+    top: 85px;
+    right: 135px;
+    opacity: 0.5;
+  }
+  .beach .man .step-8 {
+    top: 80px;
+    right: 130px;
+    opacity: 0.5;
+  }
+  .beach .man .step-9 {
+    top: 85px;
+    right: 125px;
+    opacity: 0.4;
+  }
+  .beach .man .step-10 {
+    top: 80px;
+    right: 120px;
+    opacity: 0.4;
+  }
+  .beach .man .step-11 {
+    top: 85px;
+    right: 115px;
+    opacity: 0.3;
+  }
+  .beach .man .step-12 {
+    top: 80px;
+    right: 110px;
+    opacity: 0.3;
+  }
+  .beach .man .step-13 {
+    top: 85px;
+    right: 105px;
+    opacity: 0.2;
+  }
+  .beach .man .step-14 {
+    top: 80px;
+    right: 100px;
+    opacity: 0.2;
+  }
+  .beach .man .head {
+    width: 10px;
+    height: 10px;
+    background: #422f43;
+    border-radius: 100%;
+    position: absolute;
+    right: 180px;
+    top: 39px;
+  }
+  .beach .man .body {
+    width: 14px;
+    height: 25px;
+    background: #422f43;
+    position: absolute;
+    right: 178px;
+    top: 48px;
+    border-radius: 2px;
+  }
+  .beach .man .l-t-arm {
+    width: 5px;
+    height: 14px;
+    background: #422f43;
+    position: absolute;
+    right: 191px;
+    top: 48px;
+    border-radius: 2px;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  .beach .man .l-l-arm {
+    width: 5px;
+    height: 14px;
+    background: #422f43;
+    position: absolute;
+    right: 191px;
+    top: 56px;
+    border-radius: 2px;
+    -ms-transform: rotate(-55deg);
+    -webkit-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+  }
+  .beach .man .r-t-arm {
+    width: 5px;
+    height: 14px;
+    background: #422f43;
+    position: absolute;
+    right: 174px;
+    top: 48px;
+    border-radius: 2px;
+    -ms-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+  }
+  .beach .man .r-l-arm {
+    width: 5px;
+    height: 14px;
+    background: #422f43;
+    position: absolute;
+    right: 176px;
+    top: 56px;
+    border-radius: 2px;
+    -ms-transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+  }
+  .beach .man .l-leg {
+    width: 5px;
+    height: 22px;
+    background: #422f43;
+    position: absolute;
+    right: 187px;
+    top: 65px;
+    border-radius: 2px;
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  .beach .man .r-leg {
+    width: 5px;
+    height: 22px;
+    background: #422f43;
+    position: absolute;
+    right: 178px;
+    top: 65px;
+    border-radius: 2px;
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  .beach .shadow {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    -ms-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    position: relative;
+    right: -39px;
+    top: 126px;
+  }
+  .beach .shadow-overlay {
+    position: absolute;
+    top: -120px;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    width: 100%;
+    z-index: 10;
+    height: 150px;
+    background: rgba(255, 212, 97, 0);
+    background: -moz-linear-gradient(top, rgba(255, 212, 97, 0) 0%, rgba(255, 212, 97, 0.15) 0%, rgba(255, 212, 97, 0.69) 19%, rgba(255, 212, 97, 0.93) 39%, #ffd461 62%, #ffd461 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 212, 97, 0)), color-stop(0%, rgba(255, 212, 97, 0.15)), color-stop(19%, rgba(255, 212, 97, 0.69)), color-stop(39%, rgba(255, 212, 97, 0.93)), color-stop(62%, #ffd461), color-stop(100%, #ffd461));
+    background: -webkit-linear-gradient(top, rgba(255, 212, 97, 0) 0%, rgba(255, 212, 97, 0.15) 0%, rgba(255, 212, 97, 0.69) 19%, rgba(255, 212, 97, 0.93) 39%, #ffd461 62%, #ffd461 100%);
+    background: -o-linear-gradient(top, rgba(255, 212, 97, 0) 0%, rgba(255, 212, 97, 0.15) 0%, rgba(255, 212, 97, 0.69) 19%, rgba(255, 212, 97, 0.93) 39%, #ffd461 62%, #ffd461 100%);
+    background: -ms-linear-gradient(top, rgba(255, 212, 97, 0) 0%, rgba(255, 212, 97, 0.15) 0%, rgba(255, 212, 97, 0.69) 19%, rgba(255, 212, 97, 0.93) 39%, #ffd461 62%, #ffd461 100%);
+    background: linear-gradient(to bottom, rgba(255, 212, 97, 0) 0%, rgba(255, 212, 97, 0.15) 0%, rgba(255, 212, 97, 0.69) 19%, rgba(255, 212, 97, 0.93) 39%, #ffd461 62%, #ffd461 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd461', endColorstr='#ffd461', GradientType=0 );
+  }
+  .beach .shadow-l-leg {
+    background: #ccad5a;
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    right: 187px;
+    top: -6px;
+  }
+  .beach .shadow-r-leg {
+    background: #ccad5a;
+    width: 5px;
+    height: 42px;
+    position: absolute;
+    right: 178px;
+    top: 0px;
+  }
+  .beach .shadow-body {
+    width: 14px;
+    height: 55px;
+    background: #ccad5a;
+    position: absolute;
+    right: 178px;
+    top: 41px;
+    border-radius: 2px;
+  }
+  .beach .shadow-head {
+    width: 14px;
+    height: 19px;
+    background: #ccad5a;
+    position: absolute;
+    right: 178px;
+    top: 95px;
+    border-radius: 17px;
+  }
+  .beach .shadow-r-t-arm {
+    width: 5px;
+    height: 30px;
+    background: #ccad5a;
+    position: absolute;
+    right: 172px;
+    top: 68px;
+    border-radius: 2px;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  .beach .shadow-r-l-arm {
+    width: 5px;
+    height: 34px;
+    background: #ccad5a;
+    position: absolute;
+    right: 174px;
+    top: 45px;
+    border-radius: 2px;
+    -ms-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+  .beach .shadow-l-t-arm {
+    width: 5px;
+    height: 30px;
+    background: #ccad5a;
+    position: absolute;
+    right: 192px;
+    top: 68px;
+    border-radius: 2px;
+    -ms-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+  }
+  .beach .shadow-l-l-arm {
+    width: 5px;
+    height: 34px;
+    background: #ccad5a;
+    position: absolute;
+    right: 190px;
+    top: 45px;
+    border-radius: 2px;
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+  
+  @-webkit-keyframes "pulse" {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+    }
+    25% {
+      -webkit-transform: scale(1);
+      opacity: 0.1;
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+      opacity: 0.3;
+    }
+    75% {
+      -webkit-transform: scale(1.2);
+      opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: scale(1.3);
+      opacity: 0.0;
+    }
+  }
+  
