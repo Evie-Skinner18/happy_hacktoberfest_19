@@ -50,9 +50,50 @@ img {
     padding: 2em;
 }
 
-h2 {
+.door {
+    background: lightcoral;
+}
+
+.peephole {
+    background: lightcoral;
+    border: 5px solid orange;
+    width: 60%;
+    margin: auto;
+}
+
+#funCanvas {
+    width: 100%;
+    margin: auto;
+}
+
+#chat-box {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background: #1188bb;
+}
+
+.anim-controls {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-bottom: 40px;
+    background: #1188bb;
+}
+
+.anim-controls button {
+    margin: 20px;
+    border-radius: 10px;
+    background: lightskyblue;
+}
+
+h1 {
     text-transform: capitalize;
     color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
