@@ -13,7 +13,7 @@
     height: 150px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
     font-family: Poppins;
@@ -24,6 +24,15 @@ header {
     background-color: rgb(83, 80, 80);
 }
 
+/* Countdown Bar*/
+.container .col {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+}
+
+/* end Countdown Bar*/
 .col {
     background-color: rgb(39, 139, 185);
 }
@@ -37,12 +46,15 @@ header {
     color: #04438a;
 }
 
+.row { 
+    margin-top: 40px;
+}
+
 img {
     width: 300px;
     height: 250px;
     border-radius: 5%;
-    }
-
+}
 
 .main {
     border: 5px solid blue;
@@ -50,9 +62,50 @@ img {
     padding: 2em;
 }
 
-h2 {
+.door {
+    background: lightcoral;
+}
+
+.peephole {
+    background: lightcoral;
+    border: 5px solid orange;
+    width: 60%;
+    margin: auto;
+}
+
+#funCanvas {
+    width: 100%;
+    margin: auto;
+}
+
+#chat-box {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background: #1188bb;
+}
+
+.anim-controls {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-bottom: 40px;
+    background: #1188bb;
+}
+
+.anim-controls button {
+    margin: 20px;
+    border-radius: 10px;
+    background: lightskyblue;
+}
+
+h1 {
     text-transform: capitalize;
     color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 /* Styles for circular progress bar */
@@ -235,59 +288,120 @@ html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
     background: -webkit-linear-gradient(
-            to bottom,
-            #26d0ce,
-            #1a2980
+        to bottom,
+        #26d0ce,
+        #1a2980
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
-            to bottom,
-            #26d0ce,
-            #1a2980
+        to bottom,
+        #26d0ce,
+        #1a2980
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 footer {
     background-color: #191919;
-    border-bottom: 5px solid #fe8000;
     color: #fff;
-    text-align: center;    
+    text-align: center;
     bottom: 0;
     width: 100%;
 }
 
 .Hacktoberfest {
     width: 50%;
-    height: 50vh;
+    height: 80px;
     margin: auto;
     z-index: 5;
-    margin-top: 25vh;
-    transition: .5s;
+    transition: 0.5s;
     font-size: 3em;
 }
 
 .rainbow-text {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-image: linear-gradient(
+        to left,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+    );
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .textAlign {
-    text-align: center
+    text-align: center;
 }
 
 .header {
-    background: orange;
-    border-radius: 1em;
+    background: #1565c0;
+    border-top: 10px solid black;
+    /* border-radius: 1em; */
+    text-align: center;
+}
+
+.header h2,
+.header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.brand-logo {
+    margin-left: 10px;
+
 }
 
 ul .dropdown-content {
     /* Override default material settings causing dropdown menu item text to be cut off */
-    width: auto !important; 
+    width: auto !important;
 }
 
 nav ul a:hover {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     font-weight: 500;
     text-decoration: none;
+}
+
+/* Foooter styling Improved */
+.footer-style {
+    background-color: black;
+    border-bottom: 10px solid #1565c0;
+    /* border-top: none; */
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.my-4 {
+    text-align: center;
+}
+
+h2 {
+    color: #1565c0;
+
+}
+
+body .container {
+    margin: auto;
+}
+
+.details,
+.container.details {
+    margin-bottom: 60px;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
 }

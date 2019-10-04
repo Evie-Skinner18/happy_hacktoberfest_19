@@ -13,3 +13,4 @@
 - NitinNair89
 - maniac-tech
 - Aprialdi
+- Fabrizvi
