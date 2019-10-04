@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <li class="divider"></li>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,6 +13,12 @@
   <link rel="stylesheet" href="./css/materialize.min.css">
   <link rel="stylesheet" href="./css/material-icons.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/master.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
   <title>Happy Hacktoberfest 2019!</title>
 </head>
@@ -41,7 +46,7 @@
               <li><a href="beachtime.html">BEACH TIME WOOHOO</a></li>
               <li><a href="#!">Open Source</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="contributors.html">Contributors</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="pages/k-kaufmann.html">k-kaufmann</a> </li>
               <a href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19" class="btn waves-effect waves-light blue accent" target="_blank">GitHub</a>
             </ul>
@@ -59,14 +64,17 @@
   </header>
   <br><br>
 
-  <!-- Countdown Bar -->
-
   <div class="container">
-    <div class="row" id="countdown">
-        <div class="col" id="days"></div>
-        <div class="col" id="hours"></div>
-        <div class="col" id="min"></div>
-        <div class="col" id="sec"></div>
+    <div class="row justify-content-md-center" id="countdown">
+      <div class="col-2 text-center" id="days"></div>
+      <div class="col-2 text-center" id="hours"></div>
+      <div class="col-2 text-center" id="min"></div>
+      <div class="col-2 text-center" id="sec"></div>
+      <div class="w-100"></div>
+      <div class="col-2 pb-3 text-center"><span class="h2 text-white">Days</span></div>
+      <div class="col-2 pb-3 text-center"><span class="h2 text-white">Hours</span></div>
+      <div class="col-2 pb-3 text-center"><span class="h2 text-white">Minutes</span></div>
+      <div class="col-2 pb-3 text-center"><span class="h2 text-white">Seconds</span></div>
     </div>
   </div>
 
@@ -146,46 +154,52 @@
       </div>
 
       <header class="header">
-        <!-- hey neighbour! -->
-    <p id="chat-box">..</p>
-    <div class="door">
-        <div class="peephole">
-            <canvas id="funCanvas" width="800" height="200"> </canvas>
-        </div>
-    </div>
-    <div class="anim-controls">
-        <p> Knock Knock! Press the button to see who's knocking. </p>
-        <button onclick="init()">Open</button>
-        <button onclick="stop()">Close</button>
-    </div>
         <h1 class="textAlign">Happy Hacktoberfest 2019!</h1>
         <h2 class="textAlign">WE LOVE CODING YEAH!</h2>
       </header>
-      <div class="main">
-        <!-- progress ends here -->
-        <hr>
-        <div class="text-center">
-          <h4>Hacktoberfest is presented by</h4>
-          <div class="row mr-0 m-4">
-            <div class="col-sm-6">
-              <a href="https://www.digitalocean.com">
-                <i title="Digital ocean" class="fab fa-digital-ocean fa-3x" style="color: #ffffff"></i>
-              </a>
-            </div>
-            <div class="col-sm-6">
-              <a href="https://dev.to">
-                <i title="Dev.to" class="fab fa-dev fa-3x" style="color: #ffffff"></i>
-              </a>
-            </div>
-          </div>
+      <div class="footer">
+          <div class="container">
+              <div class="container" style="letter-spacing: 2px;">
+                  <div class="row">
+                    <div class="col-20 justify-content-md-center">
+                        <font style="font-size: 2rem">Hacktoberfest is presented by</font>
+                        <a href="https://www.digitalocean.com">
+                          <i title="Digital ocean" class="fab fa-digital-ocean fa-2x" style="color: #ffffff"></i>
+                        </a>
+                        <a href="https://dev.to">
+                          <i title="Dev.to" class="fab fa-dev fa-2x" style="color: #ffffff"></i>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                        <button type="button" class="btn" style="background: #c8543b;color: #fff;">Start Hacktoberfest</button>
+                        <div class="w-100"></div>
+                        <button  type="button" class="btn mt-3" style="background: #1B2631;color:#fff;">Issues in this website</button>
+                    </div>
+                    <div class="col-sm">
+                        Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community.
+                        <br><br>
+                        <a href="https://hacktoberfest.digitalocean.com/"><font style="color: #c8543b;font-size: 1.3rem;"> Learn more about Hacktoberfest </font></a>
+                    </div>
+                    <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="First name"> 
+                      <input type="text" class="form-control" placeholder="Last name"> 
+                      <input type="email" class="form-control" placeholder="Email"> 
+                      <button type="button" class="btn mt-3" style="background: #1B2631;color:#fff;">Connect us</button>
+                    
+                    </div>
+                  </div>
+                </div>
         </div>
-        <footer class="text-center text-white">
-          <div class="Hacktoberfest">Something Funky!</div>           
-          <p> 👻 &copy Wicked Coders 2019 🎃</p>   
-        </footer>
       </div>
     </div>
   
+
 
     <!-- Link to our JS -->
     <script src="./js/jquery-3.4.1.min.js"></script>
@@ -197,6 +211,11 @@
         $('.dropdown-trigger').dropdown();
       });
     </script>
+  <!--bootstrap Script-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 
   </html>
