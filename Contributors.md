@@ -12,4 +12,5 @@
 - WorkInProgress-Development
 - NitinNair89
 - maniac-tech
+- Fabrizvi
 - Erfaniaa
