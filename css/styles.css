@@ -343,6 +343,7 @@ footer {
     margin: 0;
     padding-bottom: 10px;
     padding-top: 10px;
+}
 
 .brand-logo {
     margin-left: 10px;
@@ -383,4 +384,20 @@ nav ul a:hover {
 
 h2 {
     color: #1565c0;
+
+}
+
+body .container {
+    margin: auto;
+}
+
+.details,
+.container.details {
+    margin-bottom: 60px;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
 }
