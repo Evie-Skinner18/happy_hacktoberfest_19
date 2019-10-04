@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <li class="divider"></li>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -65,7 +66,7 @@
               <li><a href="beachtime.html">BEACH TIME WOOHOO</a></li>
               <li><a href="#!">Open Source</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="contributors.html">Contributors</a></li>
               <li><a href="pages/k-kaufmann.html">k-kaufmann</a> </li>
               <a href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19"
                 class="btn waves-effect waves-light blue accent" target="_blank">GitHub</a>
@@ -239,3 +240,59 @@
 </body>
 
 </html>
+
+      <header class="header">
+        <!-- hey neighbour! -->
+    <p id="chat-box">..</p>
+    <div class="door">
+        <div class="peephole">
+            <canvas id="funCanvas" width="800" height="200"> </canvas>
+        </div>
+    </div>
+    <div class="anim-controls">
+        <p> Knock Knock! Press the button to see who's knocking. </p>
+        <button onclick="init()">Open</button>
+        <button onclick="stop()">Close</button>
+    </div>
+        <h1 class="textAlign">Happy Hacktoberfest 2019!</h1>
+        <h2 class="textAlign">WE LOVE CODING YEAH!</h2>
+      </header>
+      <div class="main">
+        <!-- progress ends here -->
+        <hr>
+        <div class="text-center">
+          <h4>Hacktoberfest is presented by</h4>
+          <div class="row mr-0 m-4">
+            <div class="col-sm-6">
+              <a href="https://www.digitalocean.com">
+                <i title="Digital ocean" class="fab fa-digital-ocean fa-3x" style="color: #ffffff"></i>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="https://dev.to">
+                <i title="Dev.to" class="fab fa-dev fa-3x" style="color: #ffffff"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer class="text-center text-white">
+          <div class="Hacktoberfest">Something Funky!</div>           
+          <p> 👻 &copy Wicked Coders 2019 🎃</p>   
+        </footer>
+      </div>
+    </div>
+  
+
+    <!-- Link to our JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.dropdown-trigger').dropdown();
+      });
+    </script>
+  </body>
+
+  </html>
