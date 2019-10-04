@@ -25,7 +25,7 @@ header {
 }
 
 /* Countdown Bar*/
-#countdown{
+.countdown {
   margin-bottom: 0;
   color: #fdba04;
 }
