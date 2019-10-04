@@ -24,6 +24,12 @@ header {
     background-color: rgb(83, 80, 80);
 }
 
+
+.my-logo{
+	left: 0;
+
+}
+
 /* Countdown Bar*/
 .container .col {
     display: flex;
@@ -343,6 +349,7 @@ footer {
     margin: 0;
     padding-bottom: 10px;
     padding-top: 10px;
+}
 
 .brand-logo {
     margin-left: 10px;
