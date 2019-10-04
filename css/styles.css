@@ -27,7 +27,10 @@ header {
 /* Countdown Bar*/
 #countdown{
   margin-bottom: 0;
-  color: #fdba04;
+}
+
+#countdown #days h1, #countdown #hours h1, #countdown #min h1, #countdown #sec h1{
+    color: #fdba04;
 }
 
 .col {
