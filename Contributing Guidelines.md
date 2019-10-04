@@ -48,23 +48,7 @@ _Remember hackers, Hacktoberfest is about quality over quantity. However, this r
 beginners to open source and to coding in general, so if this is your first ever open source contribution, don't hesitate to correct
 a spelling mistake or change something very small. Enjoy!_
 
-<<<<<<< HEAD:Contributing Guidelines.md
 <hr/>
-=======
-# List of contributors:
-
-- Evie-Skinner18
-- mssreerag
-- Ischaan
-- ferlu
-- devnoorfatima
-- askhilsinghal1234
-- ViktorKauter
-- KamleshSilag
-- MikailSeremet
-- WorkInProgress-Development
-- jerilMJ
->>>>>>> 2032f0ed5de7610a6a1e6ebfb7625f43a0a4d083:contributing.md
 
 ## More Help
 
