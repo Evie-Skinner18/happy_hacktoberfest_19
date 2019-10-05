@@ -187,11 +187,23 @@
                         <a href="https://hacktoberfest.digitalocean.com/"><font style="color: #c8543b;font-size: 1.3rem;"> Learn more about Hacktoberfest </font></a>
                     </div>
                     <div class="col-sm">
-                      <input type="text" class="form-control" placeholder="First name"> 
-                      <input type="text" class="form-control" placeholder="Last name"> 
-                      <input type="email" class="form-control" placeholder="Email"> 
-                      <button type="button" class="btn mt-3" style="background: #1B2631;color:#fff;">Connect us</button>
-                    
+                      <form action="https://formspree.io/mdqoklyx" method="POST" style="background: transparent;">
+                        <div class="form-row">
+                          <div class="col-sm">
+                            <input type="text" name="first_name" class="form-control" placeholder="First name" required:"" style="color:#fff;">
+                          </div>
+                          <div class="col-sm">
+                            <input type="text" name="last_name"class="form-control" placeholder="Last name" style="color:#fff;">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <input type="email" name="email_address" class="form-control" id="exampleFormControlInput1" placeholder="Your email" required:"" style="color:#fff;">
+                        </div>
+                        <div class="form-row">
+                            <textarea style="background: transparent; color: #fff; border-bottom: 1px solid #fff;border-top: none;border-right: none;border-left: none;" required:"" class="form-control" name="comments" id="exampleFormControlTextarea1" rows="3" placeholder="If you like the site or have a suggestion, drop us a line; feedback is very much appreciated and always welcome!"></textarea>
+                        </div>
+                        <button type="submit" class="btn mt-3" style="background:#17202A;  color:#fff;">CONNECT US</button>
+                      </form>
                     </div>
                   </div>
                 </div>

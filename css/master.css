@@ -4,3 +4,7 @@
     color: #fff;
     font-family: "Montserrat", georgia, serif;
 }
+
+.form-control:focus {
+    outline: none;
+}
