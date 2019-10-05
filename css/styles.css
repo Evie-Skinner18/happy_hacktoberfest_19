@@ -24,6 +24,12 @@ header {
     background-color: rgb(83, 80, 80);
 }
 
+
+.my-logo{
+	left: 0;
+
+}
+
 /* Countdown Bar*/
 .countdown {
   margin-bottom: 0;
