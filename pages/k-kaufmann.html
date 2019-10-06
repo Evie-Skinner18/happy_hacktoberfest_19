@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Link to our CSS -->
+    <link rel="stylesheet" href="./../css/materialize.min.css">
+    <link rel="stylesheet" href="./../css/material-icons.css">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="./../css/k-kaufmann.css">
+    <title>k-kaufmann</title>
+</head>
+
+<body>
+<header>
+    <div class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Hacktoberfest</a></li>
+            <li><a href="#!">start hacking</a></li>
+            <li class="divider"></li>
+        </ul>
+        <nav class="blue darken-3">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">Hacktoberfest</a>
+                    <a href="index.html" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <a href="#!" class="sidenav-trigger right" data-target="slide-out">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!" class="dropdown-trigger" data-target="dropdown1">Events<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Open Source</a></li>
+                        <a href="#!" class="btn waves-effect waves-light blue accent">GitHub</a>
+                    </ul>
+                    <ul class="sidenav" id="mobile-menu">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">Events</a></li>
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Open Source</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<br><br>
+
+<div class="container">
+    <div class="row justify-content-md-center" id="countdown">
+        <div class="col" id="days"></div>
+        <div class="col" id="hours"></div>
+        <div class="col" id="min"></div>
+        <div class="col" id="sec"></div>
+        <div class="w-100"></div>
+        <div class="col"><span>Days</span></div>
+        <div class="col"><span>Hours</span></div>
+        <div class="col"><span>Minutes</span></div>
+        <div class="col"><span>Seconds</span></div>
+    </div>
+</div>
+
+<section class="section lighten-5" id="resource">
+    <h2 class="blue-text text-darken-3 center-align text-z-depth-1">Hacktoberfest 2019</h2>
+    <div class="container center">
+        <span class="grey-text text-darken-3 center">Happy Hacking</span>
+    </div>
+    <div class="row">
+
+
+        <div class="col s12 m4">
+            <div class="card z-depth-2" id="rexz">
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p style="font-size: 74px; text-align: center">My first Hacktoberfest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Link to our JS -->
+            <script src="./../js/jquery-3.4.1.min.js"></script>
+            <script src="./../js/materialize.min.js"></script>
+            <script src="./../js/scripts.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('.sidenav').sidenav();
+                    $('.dropdown-trigger').dropdown();
+                });
+            </script>
+</body>
+
+</html>
