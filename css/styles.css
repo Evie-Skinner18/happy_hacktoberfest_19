@@ -540,3 +540,7 @@ body .container {
 @keyframes beat {
     to { transform: scale(1.4); }
 }
+
+.icon-link {
+    color: black;
+}
