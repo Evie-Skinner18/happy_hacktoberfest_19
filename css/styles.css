@@ -6,9 +6,9 @@ body {
 }
 header {
     background-color: rgb(83, 80, 80);
+    color: lightgrey;
     padding: 1.5em;
 }
-
 
 img {
     width: 350px;
@@ -16,17 +16,32 @@ img {
     padding-top: 20px;
 }
 
-
 .main {
-    border: 5px solid blue;
+    border: 5px solid lightgrey;
     margin: auto;
     padding: 2em;
+}
+.page-section {
+    padding: 8rem 0;
 }
 
 h1 {
     text-transform: capitalize;
-    color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
+    color: rgb(83, 80, 80);
+}
+
+.m-t-m {
+    margin-top: 20px;
+}
+.m-t-l {
+    margin-top: 50px;
+}
+
+.bg-primary {
+    background-color: #f4623a!important;
+}
+.text-primary {
+    color: #f4623a!important;
 }
 
 /* Styles for circular progress bar */
