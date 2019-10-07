@@ -22,24 +22,8 @@ body {
 
 header {
     background-color: rgb(83, 80, 80);
-}
-
-/* Countdown Bar*/
-.countdown {
-  margin-bottom: 0;
-  color: #fdba04;
-}
-
-.col {
-    background-color: rgb(39, 139, 185);
-}
-
-.col-2 {
-    text-transform: uppercase;
-}
-
-.row {
-    margin-top: 40px;
+    color: lightgrey;
+    padding: 1.5em;
 }
 
 img {
@@ -49,9 +33,12 @@ img {
 }
 
 .main {
-    border: 5px solid blue;
+    border: 5px solid lightgrey;
     margin: auto;
     padding: 2em;
+}
+.page-section {
+    padding: 8rem 0;
 }
 
 .door {
@@ -95,9 +82,21 @@ img {
 
 h1 {
     text-transform: capitalize;
-    color: whitesmoke;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    color: rgb(83, 80, 80);
+}
+
+.m-t-m {
+    margin-top: 20px;
+}
+.m-t-l {
+    margin-top: 50px;
+}
+
+.bg-primary {
+    background-color: #f4623a!important;
+}
+.text-primary {
+    color: #f4623a!important;
 }
 
 ul .dropdown-content {
@@ -493,8 +492,8 @@ nav ul a:hover {
         transform: translateY(-15px);
     }
 }
-/* Foooter styling Improved */
 
+/* Foooter styling Improved */
 .footer-text {
     color: #fff;
 }
@@ -534,7 +533,7 @@ body .container {
 .heart {
     font-size: 50px;
     color: #e00;
-    animation: beat .25s infinite alternate;
+    animation: beat .75s infinite alternate;
     transform-origin: center;
 }
 

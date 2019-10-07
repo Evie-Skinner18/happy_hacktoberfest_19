@@ -1,10 +1,26 @@
-.animate-ball-container {
-    height: 100vh;
+#bouncing-ball{
+   height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 3rem!important;
+   margin-bottom: 0!important;
+}
+#bouncing-ball ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-bottom: 10px solid black;
     margin: 0;
     padding: 0;
+}
+#bouncing-ball ul li {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: bouncy 3s linear infinite;
 }
 
 .animate-ball-container ul {
