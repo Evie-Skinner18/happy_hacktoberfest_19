@@ -210,7 +210,14 @@
     </footer>
 
     <!-- Link to our JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
-
-</html>
+    <script>
+      $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.dropdown-trigger').dropdown();
+      });
+    </script>
+  </body>
+  </html>
