@@ -1,18 +1,132 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+#rex {
+    border-radius: 5px 50px 30px 5px;
+    height: 150px;
+}
+
+#rexz {
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
+}
+
+#rexy {
+    border-radius: 15px 50px 30px;
+    height: 150px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
     font-family: Poppins;
     height: 100vh;
 }
+
 header {
     background-color: rgb(83, 80, 80);
+    color: lightgrey;
     padding: 1.5em;
 }
 
-
 img {
-    width: 350px;
+    width: 300px;
     height: 250px;
+    border-radius: 5%;
+}
+
+.main {
+    border: 5px solid lightgrey;
+    margin: auto;
+    padding: 2em;
+}
+.page-section {
+    padding: 8rem 0;
+}
+
+.door {
+    background: lightcoral;
+}
+
+.peephole {
+    background: lightcoral;
+    border: 5px solid orange;
+    width: 60%;
+    margin: auto;
+}
+
+#funCanvas {
+    width: 100%;
+    margin: auto;
+}
+
+#chat-box {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background: #1188bb;
+}
+
+.anim-controls {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-bottom: 40px;
+    background: #1188bb;
+}
+
+.anim-controls button {
+    margin: 20px;
+    border-radius: 10px;
+    background: lightskyblue;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: rgb(83, 80, 80);
+}
+
+.m-t-m {
+    margin-top: 20px;
+}
+.m-t-l {
+    margin-top: 50px;
+}
+
+.bg-primary {
+    background-color: #f4623a!important;
+}
+.text-primary {
+    color: #f4623a!important;
+}
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
+}
+
+nav ul a:hover {
+    /* override default material hover navlink css.*/
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+}
+
+#rex {
+  border-radius: 5px 50px 30px 5px;
+  height: 150px;
+}
+
+#rexz {
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
+}
+
+#rexy {
+  border-radius: 15px 50px 30px;
+  height: 150px;
+}
+
+.col{
+    background-color:  rgb(39, 139, 185);
 }
 
 
@@ -22,15 +136,8 @@ img {
     padding: 2em;
 }
 
-
-h1 {
-    text-transform: capitalize;
-    color: whitesmoke;
-    <img src="https://images.app.goo.gl/Ka8GMfxE6BP8ueFVA"/>
-}
-
 /* Styles for circular progress bar */
-.progress{
+.progress {
     width: 150px;
     height: 150px !important;
     line-height: 150px;
@@ -38,9 +145,10 @@ h1 {
     margin: 0 auto;
     box-shadow: none;
     position: relative;
-    background-color:transparent !important;
+    background-color: transparent !important;
 }
-.progress:after{
+
+.progress:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -50,7 +158,8 @@ h1 {
     top: 0;
     left: 0;
 }
-.progress > span{
+
+.progress > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -58,10 +167,12 @@ h1 {
     top: 0;
     z-index: 1;
 }
-.progress .progress-left{
+
+.progress .progress-left {
     left: 0;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     width: 100%;
     height: 100%;
     background: none;
@@ -70,7 +181,8 @@ h1 {
     position: absolute;
     top: 0;
 }
-.progress .progress-left .progress-bar{
+
+.progress .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -78,10 +190,12 @@ h1 {
     -webkit-transform-origin: center left;
     transform-origin: center left;
 }
-.progress .progress-right{
+
+.progress .progress-right {
     right: 0;
 }
-.progress .progress-right .progress-bar{
+
+.progress .progress-right .progress-bar {
     left: -100%;
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
@@ -90,7 +204,8 @@ h1 {
     transform-origin: center right;
     animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value{
+
+.progress .progress-value {
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -103,88 +218,98 @@ h1 {
     top: 5%;
     left: 5%;
 }
-.progress.blue .progress-bar{
+
+.progress.blue .progress-bar {
     border-color: #049dff;
 }
-.progress.blue .progress-left .progress-bar{
+
+.progress.blue .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
+
+.progress.yellow .progress-bar {
     border-color: #fdba04;
 }
-.progress.yellow .progress-left .progress-bar{
+
+.progress.yellow .progress-left .progress-bar {
     animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.pink .progress-bar{
+
+.progress.pink .progress-bar {
     border-color: #ed687c;
 }
-.progress.pink .progress-left .progress-bar{
+
+.progress.pink .progress-left .progress-bar {
     animation: loading-4 0.4s linear forwards 1.8s;
 }
-.progress.green .progress-bar{
+
+.progress.green .progress-bar {
     border-color: #1abc9c;
 }
-.progress.green .progress-left .progress-bar{
+
+.progress.green .progress-left .progress-bar {
     animation: loading-5 1.2s linear forwards 1.8s;
 }
-@keyframes loading-1{
-    0%{
+
+@keyframes loading-1 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 }
-@keyframes loading-2{
-    0%{
+
+@keyframes loading-2 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(144deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-3{
-    0%{
+
+@keyframes loading-3 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
 }
-@keyframes loading-4{
-    0%{
+
+@keyframes loading-4 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(144deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-5{
-    0%{
+
+@keyframes loading-5 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(180deg);
     }
 }
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
-}
 
-
-
-footer {
-    background-color: rgb(83, 80, 80);
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
 }
 
 html  {
@@ -202,9 +327,218 @@ html  {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+footer {
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.Hacktoberfest {
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    z-index: 5;
+    transition: 0.5s;
+    font-size: 3em;
+}
+
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
-  color: transparent;
+    background-image: linear-gradient(
+        to left,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.header {
+    background: #1565c0;
+    border-top: 10px solid black;
+    /* border-radius: 1em; */
+    text-align: center;
+}
+
+.header h2,
+.header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.brand-logo {
+    margin-left: 10px;
+
+}
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.section-tags h1 {
+    -webkit-animation: fadeInRotate 1s linear 1s;
+	-moz-animation: fadeInRotate 1s linear 1s;
+	-ms-animation: fadeInRotate 1s linear 1s;
+    animation: fadeInRotate 1s linear 1s;
+}
+.section-tags h2 {
+    -webkit-animation: blurFadeIn 3s linear 1s;
+	-moz-animation: blurFadeIn 3s linear 1s;
+	-ms-animation: blurFadeIn 3s linear 1s;
+	animation: blurFadeIn 3s linear 1s;
+}
+.section-tags h3:nth-child(odd) {
+    position: relative;
+    -webkit-animation: slide-right 3s 1s;
+	-moz-animation: slide-right 3s 1s;
+	-ms-animation: slide-right 3s 1s;
+	animation: slide-right 3s 1s;
+}
+
+.section-tags h3:nth-child(even) {
+    position: relative;
+    -webkit-animation: slide-left 3s 1s;
+	-moz-animation: slide-left 3s 1s;
+	-ms-animation: slide-left 3s 1s;
+	animation: slide-left 3s 1s;
+}
+
+.section-tags h4 {
+    -webkit-animation: bounce 3s 1s;
+	-moz-animation: bounce 3s 1s;
+	-ms-animation: bounce 3s 1s;
+	animation: bounce 3s 1s;
+}
+
+@keyframes fadeInRotate {
+    0% {
+		opacity: 0;
+		transform: scale(0) rotate(360deg);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@keyframes blurFadeIn {
+	0% {
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+		-webkit-transform: scale(1.3);
+	}
+	50% {
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+		-webkit-transform: scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+		left: -100px;
+    }
+	100% {
+        opacity: 1;
+		left: 0;
+	}
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+		right: -100px;
+    }
+	100% {
+        opacity: 1;
+		right: 0;
+	}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Foooter styling Improved */
+.footer-text {
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 10px solid #1565c0;
+}
+
+.my-4 {
+    text-align: center;
+}
+
+h2 {
+    color: #1565c0;
+
+}
+
+body .container {
+    margin: auto;
+}
+
+.details,
+.container.details {
+    margin-bottom: 60px;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.heart {
+    font-size: 50px;
+    color: #e00;
+    animation: beat .75s infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes beat {
+    to { transform: scale(1.4); }
 }
 
 .icon-link {
