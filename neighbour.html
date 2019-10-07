@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to our CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/creative.min.css">
+    <title>Hey Neighbour!</title>
+</head>
+<body>
+    <!-- hey neighbour! -->
+    <p id="chat-box">..</p>
+    <div class="door">
+        <div class="peephole">
+            <canvas id="funCanvas" width="800" height="200"> </canvas>
+        </div>
+    </div>
+    <div class="anim-controls">
+        <p> Knock Knock! Press the button to see who's knocking. </p>
+        <button onclick="init()">Open</button>
+        <button onclick="stop()">Close</button>
+    </div>
+</body>
+</html>
