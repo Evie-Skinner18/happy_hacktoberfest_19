@@ -533,7 +533,7 @@ body .container {
 .heart {
     font-size: 50px;
     color: #e00;
-    animation: beat .25s infinite alternate;
+    animation: beat .75s infinite alternate;
     transform-origin: center;
 }
 

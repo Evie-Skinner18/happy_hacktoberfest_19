@@ -113,8 +113,8 @@ function changeMouth(ctx)
 }
 
 function chat(ctx)
-{			// print a random message
-    var r = Math.floor(Math.random()*10);
+{			// print a random message. There are twelve so this will produce a random no between 0 and 12
+    var r = Math.floor(Math.random()*12);
 	var x = document.getElementById("chat-box");
 	x.innerHTML = message[r];
 }
