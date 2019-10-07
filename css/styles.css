@@ -38,7 +38,7 @@ header {
     text-transform: uppercase;
 }
 
-.row { 
+.row {
     margin-top: 40px;
 }
 
@@ -98,6 +98,43 @@ h1 {
     color: whitesmoke;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+}
+
+ul .dropdown-content {
+    /* Override default material settings causing dropdown menu item text to be cut off */
+    width: auto !important;
+}
+
+nav ul a:hover {
+    /* override default material hover navlink css.*/
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+}
+
+#rex {
+  border-radius: 5px 50px 30px 5px;
+  height: 150px;
+}
+
+#rexz {
+    border-radius: 30px 5px 15px 50px;
+    height: 150px;
+}
+
+#rexy {
+  border-radius: 15px 50px 30px;
+  height: 150px;
+}
+
+.col{
+    background-color:  rgb(39, 139, 185);
+}
+
+
+.main {
+    border: 5px solid blue;
+    margin: auto;
+    padding: 2em;
 }
 
 /* Styles for circular progress bar */
@@ -320,6 +357,7 @@ footer {
         red
     );
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -455,7 +493,6 @@ nav ul a:hover {
         transform: translateY(-15px);
     }
 }
-=======
 /* Foooter styling Improved */
 
 .footer-text {
