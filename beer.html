@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- baloo font -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap" rel="stylesheet">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Link to our CSS -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/creative.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/beer.css">
     <!-- tab icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />    
-    <title>Hey Neighbour!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" /> 
+    <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>       
+    <title>I &#x2665; Beer</title>
 </head>
-<body>
-      <!-- header -->
+<body id="beer-page">
+          <!-- header -->
   <header class="masthead">
         <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light p-0 m-0" id="mainNav">
@@ -53,31 +56,15 @@
             </div>
           </div>
         </nav>
-        <!-- hey neighbour! -->
-        <p id="chat-box">..</p>
-        <div class="door">
-            <div class="peephole">
-                <canvas id="funCanvas" width="800" height="200"> </canvas>
-            </div>
-        </div>
-        <div class="anim-controls">
-            <p> Knock Knock! Press the button to see who's knocking. </p>
-            <button onclick="init()">Open</button>
-            <button onclick="stop()">Close</button>
-        </div>
-    </header>   
-
-    <!-- love heart aww -->
-    <section class="section bg-primary" id="resource">
-        <h4 class="text-white center-align text-z-depth-1 spin">Hacktoberfest 2019!</h4>
-        <div class="container center">
-            <div class="heart">&#x2665;</div>
-        </div>
+    </header>
+    <section>
+        <h1>You want some beer? Ale take care of that!</h1>
     </section>
+
     <!-- Link to our JS -->
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/materialize.min.js"></script>
-    <script src="./js/neighbour.js"></script>
+    <script src="./js/beer.js"></script>
 </body>
 </html>
