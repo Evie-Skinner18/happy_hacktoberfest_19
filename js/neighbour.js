@@ -1,84 +1,3 @@
-var countDownDate = new Date("Oct 31, 2019 23:59:59").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-// Get today's date and time
-  var now = new Date().getTime();
-
-// Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-// Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-// Display info
-  document.getElementById("days").innerHTML = "<h1 class='countdown'>"+days+" D"+"<h1>";
-  document.getElementById("hours").innerHTML = "<h1 class='countdown'>"+hours+" H"+"<h1>";
-  document.getElementById("min").innerHTML = "<h1 class='countdown'>"+minutes+" M"+"<h1>";
-  document.getElementById("sec").innerHTML = "<h1 class='countdown'>"+seconds+" S"+"<h1>";
-
-// If the count down is over, show the message
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "<h2 class='display-1 font-weight-bold'>End Hacking 2019!</h2>";
-  }
-}, 1000);
-
-
-//Something funky
-//Made this on my break with no real idea/result in mind, I think its a fun little animation.
-//Please feel free to optimize code!
-
-//Get content from element and split every character into array
-const funky = document.querySelector('.Hacktoberfest');
-const content_array = funky.innerHTML.split('');
-funky.innerHTML = '';
-
-let c = 0;
-let b = content_array.length;
-let up = true;
-
-window.setInterval(() => {
-  somethingFunky();
-}, 100);
-
-/**
- * Go from start to end of array and print characters, and vice versa.
- */
-function somethingFunky() {
-  if(c < content_array.length && up == true) {
-    funky.innerHTML += content_array[c];
-    c++
-  } else if (c == content_array.length) {
-    up = false;
-  }
-
-  if(up == false) {
-    if(funky.innerHTML.length > 0) {
-      funky.innerHTML = funky.innerHTML.slice(0, -1);
-    } else {
-      up = true;
-      c = 0;
-    }
-  }
-  randomColor();
-}
-
-/**
- * Change the element's text to a random color
- */
-function randomColor() {
-  const colors = ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red'];
-  let random = Math.floor((Math.random() * colors.length) + 1);
-  funky.style.color = colors[random];
-}
-
-
-
 // hey neigbour! -------------------------------------------------------------
 var canvas_width = 800;
 var canvas_height = 200;
@@ -101,7 +20,10 @@ let mouth_hider_speed = 0.3;
 var doAnimation = true;
 var started = 0;
 
-let message = ["You have a nice place here!", "Can I come in?", "I'm not a stranger! I am your friendly neighborhood cartoon man!", "Am I annoying you?", "Please don't close it!", "Let's chat some more!", "How was your day, neighborinoo?", "You look good today!", "Wow!", "Hey!"];
+let message = ["You have a nice place here!", "Can I come in?", 
+"I'm not a stranger! I am your friendly neighborhood cartoon man!", "Am I annoying you?", 
+"Please don't close it!", "Let's chat some more!", "How was your day, neighborinoo?", "You look good today!", 
+"Wow!", "Hey!", "Are you having a nice Hacktoberfest?", "Fancy a cuppa love?"];
 
 // start animation
 function init()
@@ -191,8 +113,8 @@ function changeMouth(ctx)
 }
 
 function chat(ctx)
-{			// print a random message
-    var r = Math.floor(Math.random()*10);
+{			// print a random message. There are twelve so this will produce a random no between 0 and 12
+    var r = Math.floor(Math.random()*12);
 	var x = document.getElementById("chat-box");
 	x.innerHTML = message[r];
 }
@@ -269,16 +191,3 @@ function eyes(evt)
 		c.style.background = "lightcoral";
 	}
 }
-
-var btnJump = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.body.scrollTo > 15 || document.documentElement.scrollTop > 15)
-    btnJump.style.display = "block";
-  else btnJump.style.display = "none";
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-

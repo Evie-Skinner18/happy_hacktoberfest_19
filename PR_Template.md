@@ -16,4 +16,4 @@
 <hr/>
 
 **Note:**
-Pull requests having a merge conflict will be closed with appropriate comments. It is the responsibility of the contributor to resolve conflicts and submit a new PR.
+We don't mind fixing a merge conflict here and there, but as a contributor, try to resolve conflicts where you can by rebasing your forked version of the project regularly. Make sure you keep up with the latest changes before you submit a new PR. Cheers everyone!
