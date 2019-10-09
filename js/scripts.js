@@ -268,3 +268,15 @@ function eyes(evt)
 		c.style.background = "lightcoral";
 	}
 }
+
+var btnJump = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+  if (document.body.scrollTo > 15 || document.documentElement.scrollTop > 15)
+    btnJump.style.display = "block";
+  else btnJump.style.display = "none";
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
