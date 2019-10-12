@@ -2,3 +2,12 @@
     width: 920px;
     height: 600px;
 }
+
+body {
+    background-color: black;
+    color: orange;
+}
+
+h1 {
+    color: orangered;
+}
