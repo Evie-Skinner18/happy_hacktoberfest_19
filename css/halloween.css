@@ -1,12 +1,12 @@
 article {
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
     grid-template-areas:
-        'header'
-        'body'
-        'footer';
+        'header header header'
+        '. main .'
+        'footer footer footer';
 }
 
 #jackolantern {
@@ -21,6 +21,18 @@ html, body {
 body {
     background-color: black;
     color: orange;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 h1 {
