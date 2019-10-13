@@ -9,6 +9,21 @@ article {
         'footer footer footer';
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+}
+
 #jackolantern {
     width: 920px;
     height: 600px;
