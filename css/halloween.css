@@ -1,3 +1,14 @@
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+        'header'
+        'body'
+        'footer';
+}
+
 #jackolantern {
     width: 920px;
     height: 600px;
@@ -10,4 +21,9 @@ body {
 
 h1 {
     color: orangered;
+    font-size: 3em;
+}
+
+p::first-letter {
+    font-size: 150%;
 }
