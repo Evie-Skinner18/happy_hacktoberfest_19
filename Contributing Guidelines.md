@@ -23,7 +23,7 @@ Follow the guidelines mentioned in [PR_Template.md](https://github.com/Evie-Skin
 2. Fork this repository to your own GitHub by clicking on the 'Fork' button (on the right)
 
 3. Now you have your own remote copy of the project! Clone this remote repository to your machine so you'll have a local copy:
-    ```
+    ```markdown
     git clone https://github.com/Evie-Skinner18/happy_hacktoberfest_19.git
     ```
 
@@ -31,13 +31,13 @@ Follow the guidelines mentioned in [PR_Template.md](https://github.com/Evie-Skin
    contribution!
 
 5. Commit your changes from the root directory of the project (happy_hacktoberfest_19):
-   ```
+   ```markdown
    git add .
    git commit -m "[Write a message that briefly explains the change you've made]"
    ```
 
 6. Push your changes from the local repository on your machine to the forked remote repository on your GitHub:
-   ```
+   ```markdown
    git push
    ```
 
