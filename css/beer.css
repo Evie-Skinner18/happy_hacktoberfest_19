@@ -1,230 +1,235 @@
 #beer-page {
-    font-family: 'Baloo Tamma', cursive;
+  font-family: "Baloo Tamma", cursive;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: #FFFBEF;
+  background: #fffbef;
 }
 
 .box {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background: none;
-    display: block;
-    margin: 40px auto 0;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: 40px auto 0;
 }
 
 .beer {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: none;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: none;
 }
 
 .cup {
-    position: absolute;
-    left: 15%;
-    bottom: 0;
-    width: 60%;
-    height: 75%;
-    background: none;
-    border: 20px solid #5D4241;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 10px;
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  width: 60%;
+  height: 75%;
+  background: none;
+  border: 20px solid #5d4241;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
 }
 
 .liquid {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 90%;
-    height: 70%;
-    background: #FAAF25;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  background: #faaf25;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .stripe-1 {
-    position: absolute;
-    bottom: 10%;
-    left: 15%;
-    width: 10%;
-    height: 60%;
-    border-radius: 50px;
-    background: #5D4241;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5d4241;
 }
 
 .stripe-2 {
-    position: absolute;
-    bottom: 10%;
-    left: 45%;
-    width: 10%;
-    height: 60%;
-    border-radius: 50px;
-    background: #5D4241;
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5d4241;
 }
 
 .stripe-3 {
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    width: 10%;
-    height: 60%;
-    border-radius: 50px;
-    background: #5D4241;
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5d4241;
 }
 
 .cup-holder {
-    position: absolute;
-    top: 35%;
-    right: 5%;
-    width: 50%;
-    height: 45%;
-    background: none;
-    border: 25px solid #5D4241;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 50%;
-    -webkit-clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
-    clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  width: 50%;
+  height: 45%;
+  background: none;
+  border: 25px solid #5d4241;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 50%;
+  -webkit-clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
+  clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
 }
 
 .foam {
-    position: absolute;
-    left: 15%;
-    top: 0;
-    width: 60%;
-    height: 25%;
-    transform: scale(1.1);
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 60%;
+  height: 25%;
+  transform: scale(1.1);
 }
 
 .foam-1 {
-    position: absolute;
-    left: 8%;
-    bottom: -2%;
-    width: 32%;
-    height: 70%;
-    border-radius: 50%;
-    border-bottom-left-radius: 0;
-    border: 20px solid #5D4241;
-    -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
-    clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  position: absolute;
+  left: 8%;
+  bottom: -2%;
+  width: 32%;
+  height: 70%;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  border: 20px solid #5d4241;
+  -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
 }
 
 .foam-2 {
-    position: absolute;
-    left: 29%;
-    bottom: 0;
-    width: 40%;
-    height: 85%;
-    border-radius: 50%;
-    border: 20px solid #5D4241;
-    -webkit-clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
-    clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
+  position: absolute;
+  left: 29%;
+  bottom: 0;
+  width: 40%;
+  height: 85%;
+  border-radius: 50%;
+  border: 20px solid #5d4241;
+  -webkit-clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
+  clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
 }
 
 .foam-3 {
-    position: absolute;
-    right: 10%;
-    bottom: -2%;
-    width: 32%;
-    height: 70%;
-    border-radius: 50%;
-    border-bottom-left-radius: 0;
-    border: 20px solid #5D4241;
-    -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
-    clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
-    transform: scaleX(-1);
+  position: absolute;
+  right: 10%;
+  bottom: -2%;
+  width: 32%;
+  height: 70%;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  border: 20px solid #5d4241;
+  -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  transform: scaleX(-1);
 }
 
 .bubbles-1 {
-    position: absolute;
-    top: 5%;
-    right: 38%;
-    width: 8%;
-    height: 8%;
-    background: #5D4241;
-    border-radius: 50%;
-    transition: all 0.5s;
-    animation: bubbling 2s infinite linear;
+  position: absolute;
+  top: 5%;
+  right: 38%;
+  width: 8%;
+  height: 8%;
+  background: #5d4241;
+  border-radius: 50%;
+  transition: all 0.5s;
+  animation: bubbling 2s infinite linear;
 }
 
 .bubbles-2 {
-    position: absolute;
-    top: 0%;
-    left: 38%;
-    width: 8%;
-    height: 8%;
-    background: #5D4241;
-    border-radius: 50%;
-    transition: all 0.5s;
-    animation: bubbling 1s infinite linear;
+  position: absolute;
+  top: 0%;
+  left: 38%;
+  width: 8%;
+  height: 8%;
+  background: #5d4241;
+  border-radius: 50%;
+  transition: all 0.5s;
+  animation: bubbling 1s infinite linear;
 }
 
 .bubbles-3 {
-    position: absolute;
-    top: 0%;
-    left: 25%;
-    width: 8%;
-    height: 8%;
-    background: #5D4241;
-    border-radius: 50%;
-    transition: all 0.5s;
-    animation: bubbling 2s infinite linear;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 8%;
+  height: 8%;
+  background: #5d4241;
+  border-radius: 50%;
+  transition: all 0.5s;
+  animation: bubbling 2s infinite linear;
 }
 
 @keyframes bubbling {
-    0% {
-        transform: scale(1) tanslateY(0);
-    }
-    100% {
-        transform: scale(0) translate(0, -250px);
-    }
+  0% {
+    transform: scale(1) tanslateY(0);
+  }
+  100% {
+    transform: scale(0) translate(0, -250px);
+  }
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 a {
-    text-decoration:none!important;
-    color:rgb(83, 80, 80);
-    font-size: 1vh;
+  text-decoration: none !important;
+  color: rgb(83, 80, 80);
+  /* font-size: 30px; */
 }
 .drink {
-    width:calc(20vw + 6px);
-    height:calc(8vw + 6px);
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    border-radius:5px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-transform:uppercase;
-    font-size: 16px;
-    font-weight:bold;
+  width: calc(20vw + 6px);
+  height: calc(8vw + 6px);
+  background-image: linear-gradient(
+    90deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 80%,
+    #00c0ff 100%
+  );
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
 }
 .drink:after {
-    content:attr(alt);
-    width:20vw;
-    height:8vw;
-    background-color:#fffbef;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  content: attr(alt);
+  width: 20vw;
+  height: 8vw;
+  background-color: #fffbef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .drink:hover {
-    animation:slidebg 2s linear infinite;
+  animation: slidebg 2s linear infinite;
 }
 
 @keyframes slidebg {
-    to {
-        background-position:20vw;
-    }
+  to {
+    background-position: 20vw;
+  }
 }

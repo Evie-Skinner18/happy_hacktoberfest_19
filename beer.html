@@ -1,90 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- baloo font -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Link to our CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/beer.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/beer.css" />
     <!-- tab icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" /> 
-    <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>       
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
+    <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>
     <title>I &#x2665; Beer</title>
-</head>
-<body id="beer-page">
-          <!-- header -->
-  <header class="masthead">
-        <!-- Navigation -->
+  </head>
+  <body id="beer-page">
+    <!-- header -->
+    <header class="masthead">
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light p-0 m-0" id="mainNav">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">Happy Hacktoberfest 2019!</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://hacktoberfest.digitalocean.com" target="_blank">Hacktoberfest</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://hacktoberfest.digitalocean.com/profile" target="_blank">start hacking</a>
-                </li>
-      
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" role="button" data-toggle="dropdown" data-target="#dropdown-events" aria-haspopup="true" aria-expanded="false">
-                    Events<i class="material-icons right"></i>
-                  </a>
-                  <div id="dropdown-events" class="dropdown-menu">
-                    <a class="dropdown-item" href="beachtime.html">BEACH TIME WOOHOO</a>
-                    <a class="dropdown-item" href="./neighbour.html">Hey Neighbour!</a>
-                    <a class="dropdown-item" href="./beer.html">I &#x2665; Beer</a>
-                    <a class="dropdown-item" href="contributors.html">Contributors</a>
-                    <a class="dropdown-item" href="pages/k-kaufmann.html">k-kaufmann</a>
-                    <a class="dropdown-item" href="./about.html">About</a>
-                    <a class="dropdown-item" href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19" class="btn waves-effect waves-light blue accent" target="_blank">GitHub</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            >Happy Hacktoberfest 2019!</a
+          >
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://hacktoberfest.digitalocean.com"
+                  target="_blank"
+                  >Hacktoberfest</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://hacktoberfest.digitalocean.com/profile"
+                  target="_blank"
+                  >start hacking</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbar-dropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  data-target="#dropdown-events"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Events<i class="material-icons right"></i>
+                </a>
+                <div id="dropdown-events" class="dropdown-menu">
+                  <a class="dropdown-item" href="beachtime.html"
+                    >BEACH TIME WOOHOO</a
+                  >
+                  <a class="dropdown-item" href="./neighbour.html"
+                    >Hey Neighbour!</a
+                  >
+                  <a class="dropdown-item" href="./beer.html"
+                    >I &#x2665; Beer</a
+                  >
+                  <a class="dropdown-item" href="contributors.html"
+                    >Contributors</a
+                  >
+                  <a class="dropdown-item" href="pages/k-kaufmann.html"
+                    >k-kaufmann</a
+                  >
+                  <a class="dropdown-item" href="./about.html">About</a>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/Evie-Skinner18/happy_hacktoberfest_19"
+                    class="btn waves-effect waves-light blue accent"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
     <section>
-        <h1>You want some beer?</h1>
-        <div class="mybeer">
+      <h1>You want some beer?</h1>
+      <div class="mybeer">
         <div class="button-container">
-        <a href="#" class="drink" alt="I would like some kriek" id="kriek"></a>
-        <a href="#" class="drink" alt="I would like some light beer" id="lightBeer"></a>
-        <a href="#" class="drink" alt="I would like some dark beer" id="darkBeer"></a>
+          <a
+            href="#"
+            class="drink"
+            alt="I would like some kriek"
+            id="kriek"
+          ></a>
+          <a
+            href="#"
+            class="drink"
+            alt="I would like some light beer"
+            id="lightBeer"
+          ></a>
+          <a
+            href="#"
+            class="drink"
+            alt="I would like some dark beer"
+            id="darkBeer"
+          ></a>
         </div>
         <div class="box">
-            <div class="beer">
-                <div class="cup">
-                    <div class="liquid" id="liquid"></div>
-                    <div class="stripe-1"></div>
-                    <div class="stripe-2"></div>
-                    <div class="stripe-3"></div>
-                </div>
-                <div class="cup-holder"></div>
-                <div class="foam">
-                    <div class="foam-1"></div>
-                    <div class="foam-2"></div>
-                    <div class="foam-3"></div>
-                </div>
-                <div class="bubbles-1"></div>
-                <div class="bubbles-2"></div>
-                <div class="bubbles-3"></div>
+          <div class="beer">
+            <div class="cup">
+              <div class="liquid" id="liquid"></div>
+              <div class="stripe-1"></div>
+              <div class="stripe-2"></div>
+              <div class="stripe-3"></div>
             </div>
+            <div class="cup-holder"></div>
+            <div class="foam">
+              <div class="foam-1"></div>
+              <div class="foam-2"></div>
+              <div class="foam-3"></div>
+            </div>
+            <div class="bubbles-1"></div>
+            <div class="bubbles-2"></div>
+            <div class="bubbles-3"></div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <!-- Link to our JS -->
@@ -92,5 +162,5 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/materialize.min.js"></script>
     <script src="./js/beer.js"></script>
-</body>
+  </body>
 </html>
