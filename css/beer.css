@@ -10,6 +10,19 @@ body {
     background: #FFFBEF;
 }
 
+.navbar-nav .nav-link {
+    font-size: .9rem;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    /* background-color: #00C0FF; */
+}
+
 .box {
     position: relative;
     width: 500px;
@@ -24,6 +37,8 @@ body {
     width: 400px;
     height: 400px;
     background: none;
+    transform: translate(15%, 20%);
+    z-index: 1;
 }
 
 .cup {
@@ -33,7 +48,7 @@ body {
     width: 60%;
     height: 75%;
     background: none;
-    border: 20px solid #5D4241;
+    border: 20px solid #777;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 10px;
@@ -87,7 +102,7 @@ body {
     width: 50%;
     height: 45%;
     background: none;
-    border: 25px solid #5D4241;
+    border: 25px solid #777;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 50%;
     -webkit-clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
@@ -111,7 +126,7 @@ body {
     height: 70%;
     border-radius: 50%;
     border-bottom-left-radius: 0;
-    border: 20px solid #5D4241;
+    border: 20px solid #D1BEBD;
     -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
     clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
 }
@@ -123,7 +138,7 @@ body {
     width: 40%;
     height: 85%;
     border-radius: 50%;
-    border: 20px solid #5D4241;
+    border: 20px solid #D1BEBD;
     -webkit-clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
     clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
 }
@@ -136,7 +151,7 @@ body {
     height: 70%;
     border-radius: 50%;
     border-bottom-left-radius: 0;
-    border: 20px solid #5D4241;
+    border: 20px solid #D1BEBD;
     -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
     clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
     transform: scaleX(-1);
@@ -148,7 +163,7 @@ body {
     right: 38%;
     width: 8%;
     height: 8%;
-    background: #5D4241;
+    background: #D1BEBD;
     border-radius: 50%;
     transition: all 0.5s;
     animation: bubbling 2s infinite linear;
@@ -160,7 +175,7 @@ body {
     left: 38%;
     width: 8%;
     height: 8%;
-    background: #5D4241;
+    background: #D1BEBD;
     border-radius: 50%;
     transition: all 0.5s;
     animation: bubbling 1s infinite linear;
@@ -172,7 +187,7 @@ body {
     left: 25%;
     width: 8%;
     height: 8%;
-    background: #5D4241;
+    background: #D1BEBD;
     border-radius: 50%;
     transition: all 0.5s;
     animation: bubbling 2s infinite linear;
@@ -227,4 +242,15 @@ a {
     to {
         background-position:20vw;
     }
+}
+
+.table {
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    width: 100%;
+    background-color: #803408;
+    position: absolute;
+    bottom: -60%;
+    z-index: 0;
 }
