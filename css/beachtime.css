@@ -4,6 +4,12 @@ body {
   background: #bf3944;
 }
 
+a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .sky {
   height: 500px;
   width: 100%;
