@@ -7,3 +7,7 @@
 
 ### Bits n bobs ###
 .DS_Store
+
+### PHPstorm ###
+.idea
+
