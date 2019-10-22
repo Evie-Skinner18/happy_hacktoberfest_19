@@ -1,3 +1,15 @@
+@keyframes filling {
+  0% {
+    background-position: 0 160px;
+    background-size: 170px 300px;
+  }
+  
+  100% {
+    background-position: 500px -18px;
+    background-size: 250px 200px;
+  }
+}
+
 #beer-page {
     font-family: 'Baloo Tamma', cursive;
 }
@@ -45,9 +57,11 @@ body {
     left: 5%;
     width: 90%;
     height: 70%;
-    background: #FAAF25;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    background: transparent repeat-x 0 100px/150px 300px url('../images/light.png');
+    z-index: 2;
+    animation: filling 1s ease-out forwards;
 }
 
 .stripe-1 {
@@ -57,6 +71,7 @@ body {
     width: 10%;
     height: 60%;
     border-radius: 50px;
+    z-index: 3;
     background: #5D4241;
 }
 
@@ -67,6 +82,7 @@ body {
     width: 10%;
     height: 60%;
     border-radius: 50px;
+    z-index: 3;
     background: #5D4241;
 }
 
@@ -77,6 +93,7 @@ body {
     width: 10%;
     height: 60%;
     border-radius: 50px;
+    z-index: 3;
     background: #5D4241;
 }
 
