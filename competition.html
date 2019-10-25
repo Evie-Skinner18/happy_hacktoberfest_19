@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Competition!</title>
-    <a href="index.html"> Home </a> 
   
     <style>
       div{margin:0; padding: 0;}
@@ -43,9 +42,32 @@
         margin-left: 0; margin-right: 0; margin-bottom: 5px;
         border: black;
       }
+      nav{
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        margin: 25px 0px;
+        border-radius: 25px;
+        background-color: #11011f;
+      }
+      button{
+        border: none;
+        border-radius: 20px;
+        float:right;
+        padding: 8px 15px;
+        margin: 0px 2px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2vw;
+        color: white;
+        background-color:#11011f ; 
+      }
+      button:hover{
+        background-color: #22023f ;
+      }
       h2{
         background-color: rgba(95, 21, 95, 0.445);
-        width: 80%;
+        width: 60%;
         color: rgb(226, 129, 255);
         font-family:'Courier New', Courier, monospace;
         font-size: 3vw;
@@ -60,21 +82,23 @@
       .container{
         background-color: rgba(226, 179, 245, 0.452);
         border-radius: 50px;
-        width: 40%;
+        width: 50%;
         margin: auto;
         
       }
       .Name{
         font-size: 2vw ;
-        padding-top: 20px;
+        padding: 50px 30px;
         text-align: center;
       }
       label{
-        
+        margin:0px 15px;
+        float: left;
         text-shadow: 2px 2px rgb(21, 26, 95);
       }
       input{
         border-radius: 10px;
+        float: right;
         border: none;
         opacity: 1;
       }
@@ -109,18 +133,24 @@
   <body>
     <div class="bigContain">
         <h1>Competition Time!</h1>
+        <nav>
+          <a href="index.html"> <button>Home</button></a>
+          <a href="https://hacktoberfest.digitalocean.com" target="_blank"><button>Hacktoberfest</button></a>
+          <a href="https://hacktoberfest.digitalocean.com/profile" target="_blank"><button>Start Hacking</button></a>
+        </nav>
         <h2>Enter Below...</h2>
         <div class="container">
         <form action="action_page.php">
           <div class="Name">
             
-              <label for="fname" >First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="  Your name.." style=" margin: 10px; padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
+            <label for="fname" >First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="  Your first name.." style=" padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
     
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="  Your last name.." style=" margin: 10px; padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
+            <input type="text" id="lname" name="lastname" placeholder="  Your last name.." style=" padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
             <label for="country">Country</label>
-            <select id="country" style=" background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif; margin-left: 40px; padding: 0px 80px; border-radius: 15px;" name="country">
+            <select id="country" style=" background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif; padding: 0px 80px; border-radius: 15px; float: right;" name="country">
+            <option value="default" style="color:gray">Select here</option>
             <option value="india">India</option>
             <option value="australia">Australia</option>
             <option value="canada">Canada</option>
@@ -132,7 +162,7 @@
           <label for="question">What is the best halloween costume and why?</label><br>
           <textarea id="question?" name="subject" placeholder="Write something..." style="border-radius: 10px;padding: 0px 10px; height:200px; width: 80%; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif; margin: 20px 5px;"></textarea>
           <br>
-          <input type="submit" value="Submit" class="submit" style="margin-bottom: 10px;">
+          <input type="submit" value="Submit" class="submit" style="margin-bottom: 10px; float: none;">
     
           </div>
           
