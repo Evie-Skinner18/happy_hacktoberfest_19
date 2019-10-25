@@ -3,33 +3,145 @@
   <head>
     <meta charset="utf-8">
     <title>Competition!</title>
-    <a href="index.html"> Home </a>  </head>
+    <a href="index.html"> Home </a> 
+  
+    <style>
+      div{margin:0; padding: 0;}
+      body{
+        background-image: url("https://miro.medium.com/max/3840/1*TIhCehpIzTeZonc94xvc8w.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .bigContain{
+        margin:0;
+        background-color: rgba(72, 8, 156, 0.2);
+        border-radius: 100px;;
+        color: rgb(40, 176, 255) ;
+        
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 2px #fff, 0 0 4px #f7c76e, 0 0 6px #e66f00, 0 0 8px #e6a900, 0 0 12px #e69600, 0 0 14px #e68a00;
+        }
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 6px #ffd04d, 0 0 8px #ffac4d, 0 0 10px #ffc14d, 0 0 12px #ffb84d, 0 0 14px #ffb24d, 0 0 16px #ff9d4d;
+        }
+      }
+      h1{
+        font-size: 5vw;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        color: rgba(128, 0, 128, 1);
+        text-align: center;
+        margin-top:  8px;
+        width: 100%;
+        margin-left: 0; margin-right: 0; margin-bottom: 5px;
+        border: black;
+      }
+      h2{
+        background-color: rgba(95, 21, 95, 0.445);
+        width: 80%;
+        color: rgb(226, 129, 255);
+        font-family:'Courier New', Courier, monospace;
+        font-size: 3vw;
+        text-align: center;
+        margin:auto;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        border-bottom: 20px solid rgba(36, 1, 33, 0.2);
+        border-top: 20px solid rgba(36, 1, 33, 0.2);
+        
+      }
+      .container{
+        background-color: rgba(226, 179, 245, 0.452);
+        border-radius: 50px;
+        width: 40%;
+        margin: auto;
+        
+      }
+      .Name{
+        font-size: 2vw ;
+        padding-top: 20px;
+        text-align: center;
+      }
+      label{
+        
+        text-shadow: 2px 2px rgb(21, 26, 95);
+      }
+      input{
+        border-radius: 10px;
+        border: none;
+        opacity: 1;
+      }
+      input.submit{
+        background-color: teal;
+        font-size: 1.5vw;
+        width: 80%;
+        margin: 10px 50px;
+        padding: 8px 50px;
+        text-align: center;
+        border-radius: 30px;
+        color: white;
+        border: none;
+        margin: auto;
+      }
+      input.submit:hover{
+        background-color: rgb(1, 59, 59);
+        font-size: 1.5vw;
+        width: 80%;
+        margin: 10px 50px;
+        padding: 8px 50px;
+        text-align: center;
+        border-radius: 30px;
+        color: white;
+        border: none;
+        margin: auto;
+
+      }
+
+    </style>
+  </head>
   <body>
-    <h1>Competition Time!</h1>
-    <h2>Enter below...</h2>
-    <div class="container">
-    <form action="action_page.php">
-
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-
-      <label for="question">What is the best halloween costume and why?</label>
-      <textarea id="question?" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-
-      <input type="submit" value="Submit">
-
-    </form>
-  </div>
+    <div class="bigContain">
+        <h1>Competition Time!</h1>
+        <h2>Enter Below...</h2>
+        <div class="container">
+        <form action="action_page.php">
+          <div class="Name">
+            
+              <label for="fname" >First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="  Your name.." style=" margin: 10px; padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
+    
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="  Your last name.." style=" margin: 10px; padding: 0px 10px; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif;"><br>
+            <label for="country">Country</label>
+            <select id="country" style=" background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif; margin-left: 40px; padding: 0px 80px; border-radius: 15px;" name="country">
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            
+          </select>
+          <br>
+          <br>
+          <label for="question">What is the best halloween costume and why?</label><br>
+          <textarea id="question?" name="subject" placeholder="Write something..." style="border-radius: 10px;padding: 0px 10px; height:200px; width: 80%; opacity: 1; background-color: rgba(255, 255, 255, 0.5); font-size: 1.5vw; font-family: 'Times New Roman', Times, serif; margin: 20px 5px;"></textarea>
+          <br>
+          <input type="submit" value="Submit" class="submit" style="margin-bottom: 10px;">
+    
+          </div>
+          
+          
+          
+        </form>
+      </div>
+    </div>
+    
 
   </body>
 </html>
