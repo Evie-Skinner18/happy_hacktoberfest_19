@@ -1,0 +1,58 @@
+
+<html>
+
+    <head>
+        <script type="text/javascript" src="boxar.js"></script>
+        <title>
+        Find The Point | Hacktober 2019
+        </title>
+        <h2><a class="navbar-brand" href="index.html">Happy Hacktoberfest 2019!</a></h2>
+        <h3>Move your cursor into the red box to start the game</h3>
+        <p>Keep moving your cursor inside the red box area and see as the counter increments. The goal is to move the cursor towards the counted number. To restart the game just click on the win message!</p>
+    </head>
+
+    <script src="js.js"></script>
+    
+    <body >
+        
+        <div class="box" onmousemove="myFiddle(this)"><p id="changethis" onclick="emptyString(event)"></p></div>
+        
+    <p id="values"></p>
+        
+        <h2 id="checkthis"  ></h2>
+                
+        
+        
+        
+    </body>
+</html>
+
+<style>
+
+    body{
+        background-color: aqua;
+    }
+    
+    p{
+/*        background-color: blue;*/
+    }
+    
+    #changethis {
+        font-size: 20px;
+        font-family: cursive;
+        background-color: white;
+        
+        
+    }
+    
+    .box {
+        width: 300px;
+        position: inherit;
+        height: 201px;
+        background-color: red;
+        margin: 25px 0px 0 400px;
+        text-align: center;
+        background-color: red;
+        text-align: center;
+    }
+</style>
