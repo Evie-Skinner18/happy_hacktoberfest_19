@@ -54,31 +54,37 @@
   </nav>
 </header>
 
-    <h1>Competition Time!</h1>
-    <h2>Enter below...</h2>
+  <h1>Competition Time!</h1>
+  <h2>Enter below...</h2>
+    <!--Competition entry form-->
     <div class="container">
     <form action="action_page.php">
 
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input class="soft-edge" type="text" id="fname" name="firstname" placeholder="Your name..">
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input class="soft-edge" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
       <label for="country">Country</label>
       <select id="country" name="country">
+        <option value="uk">UK</option>
         <option value="australia">Australia</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
+        <option value="france">France</option>
       </select>
 
       <label for="question">What is the best halloween costume and why?</label>
-      <textarea id="question?" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+      <textarea class="soft-edge" id="question?" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
+      <input class="soft-edge" type="submit" value="Submit">
 
     </form>
+      <img id="pumpkin" src="images/pumpkin.jpg" alt="Pumpkin">
   </div>
+
+
 
   <!-- Link to our JS -->
   <script src="./js/jquery.min.js"></script>
