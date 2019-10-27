@@ -1,0 +1,14 @@
+body{
+  font-family: 'Baloo Tamma';
+  background-color:rgb(244, 98, 58);
+  color: black;
+}
+
+h1, h2{
+  text-align: center;
+  color: black;
+}
+
+.container{
+text-align: center;
+}
