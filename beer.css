@@ -271,3 +271,7 @@ a {
     bottom: -60%;
     z-index: 0;
 }
+
+.dropdown-item {
+        font-size: 12px;
+}

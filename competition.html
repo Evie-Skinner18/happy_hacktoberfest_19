@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Competition!</title>
+    <a href="index.html"> Home </a>  
+    <script type="text/javascript" src="competitionValidation.js"></script>
+    </head>
+    
+    
+    
+  <body>
+    <h1>Competition Time!</h1>
+    <h2>Enter below...</h2>
+    <div class="container">
+    <form onsubmit="return ValidateForm()">
+
+      <label for="frname">First Name</label>&nbsp;
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">&nbsp;
+        
+      <label for="lsname">Last Name</label>&nbsp;
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">&nbsp;
+        
+      <label for="country">Country</label>&nbsp;
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+        <br><br>
+      <label for="Question">What is the best halloween costume and why?</label>
+        <br>
+      <textarea id="question" name="subject" placeholder="Write something..." style="height:200px; width:500px"></textarea>
+        <br>
+      <input type="submit" value="Submit" required>
+
+    </form>
+  </div>
+
+  </body>
+</html>
