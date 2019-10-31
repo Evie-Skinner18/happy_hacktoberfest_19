@@ -1,0 +1,60 @@
+body{
+  font-family: 'Baloo Tamma';
+  background-color:rgb(244, 98, 58);
+  color: black;
+}
+
+h1, h2{
+  text-align: center;
+  color: black;
+}
+
+.container{
+text-align: center;
+padding: 25px 50px 75px 100px;
+}
+
+form{
+  border: 5px solid black;
+  border-style: dashed;
+  background-color: rgb(211, 211, 211);
+  border-radius: 25px;
+}
+
+.soft-edge{
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#pumpkin{
+width: 600px;
+height: 400px;
+margin: 0 auto;
+border: 5px solid black;
+margin: 40px 0;
+}
+
+#pumpkin:hover{
+  transition: transform 1s ease;
+  transform: rotate(360deg) scale(2);
+}
+
+.boo{
+  font-size: 5em;
+  padding: 50px;
+}
+
+.boo:hover{
+  transform: scale(3);
+}
+
+/*
+section:hover{
+  width: 55px;
+  height: 55px;
+  transition 0.6s ease;
+
+  will-change: transform;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+*/
