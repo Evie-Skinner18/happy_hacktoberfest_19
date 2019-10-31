@@ -7,7 +7,7 @@
 ### This is my first Hacktoberfest, how do I get started?  :rocket:
 
 - Have a look for issues labelled as 'good first issue', 'hacktoberfest', 'up-for-grabs', or 'first-timers-only'.
-- Read the instructions in contributing.md
+- Read the instructions in [Contributing Guidelines.md](https://github.com/Evie-Skinner18/happy_hacktoberfest_19/blob/master/Contributing%20Guidelines.md).
 - Have fun creating something new!
 
 You can view the progress of the website so far here: https://evie-skinner18.github.io/happy_hacktoberfest_19/
