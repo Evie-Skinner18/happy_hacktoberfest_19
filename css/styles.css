@@ -13,6 +13,23 @@
     height: 150px;
 }
 
+#counters{
+    background-color:black;
+    background-image: url('../images/counter-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.countdown, .counter-text{
+    color: #ffff;
+}
+
+.countdown{
+    font-size: 2.5rem;
+}
+
+
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
