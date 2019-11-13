@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
         <!-- Link to stylesheets -->
         <link rel="stylesheet" type="text/css" href="./css/halloween.css">
+        <!-- Link to script -->
+        <script src="./js/halloween.js"></script>
         <!-- tab icon -->
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
         <title>Halloween</title>  
@@ -21,12 +23,8 @@
             </header>
 
             <main>
-            <script>
-                var onImg= "./images/off.jpg";
-                var offImg= "./images/on.jpg";
-            </script>
 
-            <img id="jackolantern" alt ="a jackolantern" src="./images/off.jpg" onclick="this.src = this.src == offImg ? onImg : offImg;"/>
+            <img id="jackolantern" alt ="a jackolantern" src="./images/off.jpg"/>
             <br>
             <label for="jackolantern">Click on the jackolantern to illuminate it</label>
             

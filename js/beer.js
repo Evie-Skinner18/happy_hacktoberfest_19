@@ -2,11 +2,18 @@ window.addEventListener('load', () => {
     const kriek = document.getElementById('kriek');
     const lightBeer = document.getElementById('lightBeer');
     const darkBeer = document.getElementById('darkBeer');
+    const weissbier = document.getElementById('weissbier');
     const liquid = document.getElementById('liquid');
     const defaultBeer = window.getComputedStyle(liquid).backgroundImage;
 
-    const beers = {kriek: '#631526', lightBeer: '#FAAF25', darkBeer: '#400000'};
+    const beers = {kriek: '#631526', lightBeer: '#FAAF25', darkBeer: '#400000', weissbier: '#FDE7B6'};
 
+    weissbier.addEventListener('click', (e) => {
+        liquid.style["background-image"] = defaultBeer.replace("light","weissbier");
+        reset(liquid);
+        e.preventDefault();
+    })
+    
     kriek.addEventListener('click', (e) => {
         liquid.style["background-image"] = defaultBeer.replace("light","kriek");
         reset(liquid);
@@ -25,7 +32,6 @@ window.addEventListener('load', () => {
         reset(liquid);
         e.preventDefault();
     })
-
 });
 
 function reset(element){

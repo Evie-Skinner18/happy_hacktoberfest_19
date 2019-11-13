@@ -65,6 +65,7 @@ _Remember hackers, Hacktoberfest is about quality over quantity. However, this r
 - [MikailSeremet](https://github.com/MikailSeremet)
 - [WorkInProgress-Development](https://github.com/WorkInProgress-Development)
 - [jerilMJ](https://github.com/jerilMJ)
+- [johnatt2](https://github.com/johnatt2)
 
 
 ## More Help

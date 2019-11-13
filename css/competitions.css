@@ -1,0 +1,170 @@
+body{
+  font-family: 'Baloo Tamma';
+  background-color:rgb(244, 98, 58);
+  color: black;
+}
+
+h1, h2{
+  text-align: center;
+  color: black;
+}
+
+.masthead {
+  margin-bottom: 50px;
+}
+
+.container{
+  text-align: center;
+}
+
+form{
+  border: 5px solid black;
+  border-style: dashed;
+  background-color: rgb(211, 211, 211);
+  border-radius: 25px;
+}
+
+.soft-edge{
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#pumpkin{
+position: relative;
+width: 90%;
+max-width: 600px;
+height: auto;
+margin: 0 auto;
+border: 5px solid black;
+margin: 40px 0;
+z-index: 3;
+}
+
+#pumpkin:hover{
+  transition: transform 1s ease;
+  transform: rotate(360deg) scale(2);
+}
+
+.boo{
+  font-size: 5em;
+  padding: 50px;
+}
+
+.boo:hover{
+  transform: scale(3);
+}
+
+/*
+section:hover{
+  width: 55px;
+  height: 55px;
+  transition 0.6s ease;
+
+  will-change: transform;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+*/
+
+.competition-form {
+  font-family: sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 40px;
+}
+
+@media (max-width: 400px) {
+  .competition-form {
+    padding: 10px 20px;
+  }
+}
+
+.competition-form label {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.competition-form input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.competition-form input:focus {
+  box-shadow: 0 0 0 1px rgb(244, 98, 58);
+}
+
+.competition-form .select-wrapper {
+  position: relative;
+  width: 100%;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.competition-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.competition-form .select-wrapper::before {
+  content: '';
+  width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;  /* left arrow slant */
+	border-right: 8px solid transparent; /* right arrow slant */
+	border-top: 8px solid rgb(244, 98, 58); /* bottom, add background color here */
+	font-size: 0;
+  line-height: 0;
+  position: absolute;
+  right: 5px;
+  top: 18px;
+  z-index: 1;
+}
+
+.competition-form select:focus {
+  box-shadow: 0 0 0 1px rgb(244, 98, 58);
+}
+
+.competition-form textarea {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  height: 200px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.competition-form textarea:focus {
+  box-shadow: 0 0 0 1px rgb(244, 98, 58);
+}
+
+.competition-form .submit {
+  background: rgb(244, 98, 58);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.competition-form .submit:hover {
+  box-shadow: 0 0 0 2px rgb(244, 98, 58);
+  color: rgb(244, 98, 58);
+  background: white;
+  transition: all 0.2s ease;
+}
