@@ -312,7 +312,7 @@ nav ul a:hover {
     }
 }
 
-html  {
+html  {
     height: 100%;
     background: #1a2980; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -565,4 +565,4 @@ body .container {
 
 .icon-link {
     color: black;
-}
+} 
