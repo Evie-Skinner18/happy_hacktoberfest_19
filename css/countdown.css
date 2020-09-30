@@ -1,0 +1,95 @@
+body {
+    font-family: "Quicksand";
+    background: linear-gradient(45deg, #E65100, #FFC107);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  img {
+    animation: wobble 1s infinite alternate-reverse;
+    transform: rotate(10deg);
+    position: relative;
+    top: 0;
+  }
+  
+  .to-date {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .to-date #to {
+    display: block;
+    font-size: 42px;
+    background: #252525;
+    border-radius: 100px;
+    margin: 10px 0 0 0;
+    padding: 8px 5px;
+    font-weight: 600;
+  }
+  
+  .countdown-container .countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    line-height: 1;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-container {
+    display: flex;
+    padding: 40px 80px;
+    border-radius: 100px;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-box {
+    width: 90px;
+    height: 90px;
+    background: #252525;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-box:last-of-type {
+    margin: 0;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-box p {
+    color: white;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-box .counter-time {
+    font-size: 60px;
+    margin: 0 0 2px 0;
+  }
+  .countdown-container .countdown .counter-section .counter-wrap .counter-box .counter-tag {
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 50px;
+    height: 50px;
+    background: #252525;
+    border-radius: 100px;
+    line-height: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes wobble {
+    from {
+      transform: scale(0.9);
+      top: 20px;
+    }
+    to {
+      transform: scale(1);
+      top: 0px;
+    }
+  }
