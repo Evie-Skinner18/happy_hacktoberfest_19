@@ -1,34 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/countDown.css" />
+    <title>Countdown to halloween</title>
+  </head>
+  <body class="body">
+    <section class="count-down_section">
+      <h1 class="count-down_title">Until Halloween they remain</h1>
+      <p id="demo"></p>
+    </section>
+  </body>
+  <script>
+    // Create end date
+    var countDownDate = new Date('Jan 5, 2021 15:37:25').getTime();
 
-<p id="demo"></p>
-<p>Until Halloween</p>
+    // Set interval to every second
+    var x = setInterval(function () {
+      // Get current time
+      var now = new Date().getTime();
 
-<script>
-// Create end date
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+      //Calcualte time between now and end date
+      var distance = countDownDate - now;
 
-// Set interval to every second
-var x = setInterval(function() {
+      // Calulate days, hours, mins, seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Get current time
-  var now = new Date().getTime();
+      // Display time in browser
+      document.getElementById('demo').innerHTML =
+        days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
 
-  //Calcualte time between now and end date
-  var distance = countDownDate - now;
-
-  // Calulate days, hours, mins, seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display time in browser
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-//Stop when end date is reached
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+      //Stop when end date is reached
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById('demo').innerHTML = 'EXPIRED';
+      }
+    }, 1000);
+  </script>
+</html>
