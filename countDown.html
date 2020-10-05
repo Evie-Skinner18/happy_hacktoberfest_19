@@ -1,40 +1,44 @@
-<link rel="stylesheet" type="text/css" href="./css/countdown.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/countDown.css" />
+    <title>Countdown to halloween</title>
+  </head>
+  <body class="body">
+    <section class="count-down_section">
+      <h1 class="count-down_title">Until Halloween they remain</h1>
+      <p id="demo"></p>
+    </section>
+  </body>
+  <script>
+    // Create end date
+    var countDownDate = new Date('Jan 5, 2021 15:37:25').getTime();
 
-<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
+    // Set interval to every second
+    var x = setInterval(function () {
+      // Get current time
+      var now = new Date().getTime();
 
-<div class="countdown-container">
-  <!--<img width="200px" style="margin:0 auto 20px auto;display:block" src="https://image.flaticon.com/icons/svg/2144/2144314.svg">-->
-  
-  <img width="200px" style="margin:0 auto 20px auto;display:block" src="https://media.giphy.com/media/MGndlZYnTsZAA/giphy.gif">
+      //Calcualte time between now and end date
+      var distance = countDownDate - now;
 
-  <div class="to-date"> Counting to: <span id="to"></span></div>
-<div class="countdown"></div>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script>
-  $(document).ready(
-    function () {
-        
-        
-    
-        $(window).trigger('resize');
-        $(window).trigger('resize');
-        var dd = "October 31, 2020"
-        /*var deadline = new Date("<?php // echo date("M d, Y H:i:s", $promotion['countdown']); ?>").getTime(); */
-        var deadline = new Date(dd + " 00:00:00").getTime();
-        var x = setInterval(function() {
-        var now = new Date().getTime();
-        var t = deadline - now;
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        var e = document.getElementsByClassName("countdown");
-        
-        jQuery('.countdown').html("<div class='counter-section'><div class='counter-wrap'><div class='counter-container'><div class='counter-box'><p class='counter-time'>" + days + "</p><p class='counter-tag'>days</p></div>" + "<div class='counter-box'><p class='counter-time'>" + hours + "</p><p class='counter-tag'>hrs</p></div>" + "<div class='counter-box'><p class='counter-time'>" + minutes + "</p><p class='counter-tag'>mins</p></div>" + "<div class='counter-box'><p class='counter-time'>" + seconds + "</p><p class='counter-tag'>scds</p></div></div></div></div>");
-        
-     $('#to').html(dd);
-          
-        }, 1000);
-    })
-</script>
+      // Calulate days, hours, mins, seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display time in browser
+      document.getElementById('demo').innerHTML =
+        days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+
+      //Stop when end date is reached
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById('demo').innerHTML = 'EXPIRED';
+      }
+    }, 1000);
+  </script>
+</html>
