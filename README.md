@@ -1,3 +1,5 @@
+# Not accepting PRs for Hacktoberfest 2020 (because this project was for Hacktoberfest 2019)
+
 # Happy Hacktoberfest 2019! :jack_o_lantern: :ghost: :fire: :fire:
 
 :stars: :stars: :stars: :stars: :stars: :stars: :stars: :stars: :stars:
